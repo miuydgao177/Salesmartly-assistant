@@ -1,0 +1,446 @@
+#salesmartly-test-assistant-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483647;
+  width: 344px;
+  max-height: min(720px, calc(100vh - 24px));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  padding: 12px;
+  border: 1px solid #d7e0e8;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(207, 234, 255, 0.9), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  color: #172033;
+  box-shadow:
+    0 22px 64px rgba(15, 23, 42, 0.14),
+    0 2px 10px rgba(15, 23, 42, 0.06);
+  font: 13px/1.55 "Avenir Next", "PingFang SC", "Noto Sans SC", sans-serif;
+  will-change: transform, left, top;
+}
+
+#salesmartly-test-assistant-panel.salesmartly-panel-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+#salesmartly-test-assistant-panel * {
+  box-sizing: border-box;
+}
+
+.salesmartly-panel-header {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 10px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.salesmartly-panel-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding-right: 4px;
+}
+
+.salesmartly-panel-title {
+  min-width: 0;
+}
+
+.salesmartly-panel-title strong {
+  display: block;
+  color: #182338;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.salesmartly-panel-subtitle {
+  margin: 2px 0 0;
+  color: #637188;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.salesmartly-source-badge {
+  align-self: center;
+  flex-shrink: 0;
+  padding: 5px 8px;
+  border: 1px solid #d5e6f5;
+  border-radius: 999px;
+  background: rgba(239, 248, 255, 0.96);
+  color: #0c6ea6;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.salesmartly-source-badge[data-source="image_bot"] {
+  border-color: #cdebd8;
+  background: #ecfdf3;
+  color: #137149;
+}
+
+.salesmartly-source-badge[data-source="rules"] {
+  border-color: #d8e6f8;
+  background: #eef6ff;
+  color: #0f6aa8;
+}
+
+.salesmartly-panel-back-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid #d5dde8;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #37465d;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.salesmartly-panel-back-icon:hover {
+  background: #f5f9fc;
+  color: #111827;
+  transform: translateX(-1px);
+}
+
+.salesmartly-panel-back-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.salesmartly-panel-toolbar,
+.salesmartly-panel-controls,
+.salesmartly-recommendation {
+  border: 1px solid #e3eaf2;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.salesmartly-panel-toolbar {
+  padding: 8px;
+}
+
+.salesmartly-panel-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.salesmartly-panel-actions .salesmartly-mock-only {
+  grid-column: 1 / -1;
+}
+
+.salesmartly-panel-actions button {
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition: transform 120ms ease, filter 120ms ease, background 120ms ease;
+}
+
+.salesmartly-panel-actions button:hover,
+.salesmartly-recommendation-actions button:hover,
+.salesmartly-pending-remove:hover {
+  filter: brightness(0.97);
+}
+
+.salesmartly-panel-actions button:active,
+.salesmartly-recommendation-actions button:active {
+  transform: translateY(1px);
+}
+
+.salesmartly-primary-action {
+  border: 0;
+  background: linear-gradient(180deg, #2d67f3 0%, #2455d7 100%);
+  color: #ffffff;
+}
+
+.salesmartly-secondary-action {
+  border: 1px solid #d5dde8;
+  background: #f8fbfe;
+  color: #20304a;
+}
+
+.salesmartly-muted-action {
+  border: 1px solid #d5dde8;
+  background: #eef3f8;
+  color: #5b677d;
+}
+
+.salesmartly-panel-actions button[hidden] {
+  display: none;
+}
+
+.salesmartly-panel-controls {
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.salesmartly-message-scope {
+  display: grid;
+  gap: 6px;
+}
+
+.salesmartly-message-scope span,
+.salesmartly-switch-grid span {
+  color: #536277;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.salesmartly-message-scope select,
+.salesmartly-switch-grid select {
+  width: 100%;
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+}
+
+.salesmartly-status {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #f3f6fa;
+  color: #334155;
+}
+
+.salesmartly-status-success {
+  background: #ebfbf2;
+  color: #0f7a49;
+}
+
+.salesmartly-status-error {
+  background: #fff1f1;
+  color: #b42318;
+}
+
+.salesmartly-recommendation {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.salesmartly-recommendation[hidden] {
+  display: none;
+}
+
+.salesmartly-recommendation-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.salesmartly-recommendation-heading-main strong {
+  color: #162136;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.salesmartly-recommendation-label {
+  margin: 8px 0 4px;
+  color: #607087;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.salesmartly-switch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.salesmartly-switch-grid label {
+  display: grid;
+  gap: 6px;
+}
+
+.salesmartly-recommendation-images {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.salesmartly-image-card {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 8px;
+  border: 1px solid #dde6ef;
+  border-radius: 12px;
+  background: #fcfdff;
+}
+
+.salesmartly-image-card input {
+  margin-top: 6px;
+}
+
+.salesmartly-image-thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.salesmartly-image-thumb img,
+.salesmartly-image-fallback {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.salesmartly-image-thumb img {
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  background: #f4f7fb;
+}
+
+.salesmartly-image-fallback {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  padding: 8px;
+  background: #eef4f8;
+  color: #64748b;
+  font-size: 12px;
+  text-align: center;
+}
+
+.salesmartly-image-meta {
+  margin-top: 6px;
+}
+
+.salesmartly-image-meta strong,
+.salesmartly-image-meta span {
+  display: block;
+}
+
+.salesmartly-image-meta strong {
+  color: #1d293d;
+}
+
+.salesmartly-image-meta span {
+  color: #68778d;
+  font-size: 11px;
+}
+
+.salesmartly-recommendation-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.salesmartly-recommendation-actions .salesmartly-primary-action,
+.salesmartly-recommendation-actions .salesmartly-secondary-action,
+.salesmartly-recommendation-actions .salesmartly-muted-action {
+  min-height: 38px;
+}
+
+.salesmartly-recommendation-actions [data-action="copy-next-image"] {
+  grid-column: 1 / -1;
+}
+
+.salesmartly-recommendation-actions [data-action="clear-pending"] {
+  grid-column: span 1;
+}
+
+.salesmartly-recommendation-actions button {
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.salesmartly-pending-remove {
+  width: calc(100% - 20px);
+  margin: 0 10px 12px;
+  min-height: 34px;
+  border: 1px solid #d7e0e8;
+  border-radius: 10px;
+  background: #eef3f8;
+  color: #334155;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+}
+
+body.salesmartly-pick-mode,
+body.salesmartly-pick-mode * {
+  cursor: crosshair !important;
+}
+
+.salesmartly-pick-hover {
+  outline: 2px dashed #2d67f3 !important;
+  outline-offset: 2px !important;
+}
+
+.salesmartly-pick-highlight {
+  outline: 3px solid #0ea5e9 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.14) !important;
+}
+
+#salesmartly-test-assistant-panel[data-page-mode="real"] .salesmartly-mock-only {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  #salesmartly-test-assistant-panel {
+    right: 10px;
+    bottom: 10px;
+    width: min(320px, calc(100vw - 16px));
+    max-height: calc(100vh - 16px);
+    padding: 10px;
+  }
+
+  .salesmartly-panel-header {
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+
+  .salesmartly-source-badge {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .salesmartly-panel-actions,
+  .salesmartly-switch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .salesmartly-recommendation-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .salesmartly-recommendation-actions [data-action="copy-next-image"],
+  .salesmartly-recommendation-actions [data-action="clear-pending"] {
+    grid-column: auto;
+  }
+}

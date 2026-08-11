@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "SaleSmartly Test Assistant",
+  "version": "0.1.0",
+  "description": "用于 SaleSmartly 测试页面的最小可运行辅助扩展。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://salesmartly.com/*",
+        "https://*.salesmartly.com/*",
+        "http://salesmartly.com/*",
+        "http://*.salesmartly.com/*",
+        "file:///*",
+        "http://127.0.0.1/*",
+        "http://localhost/*"
+      ],
+      "js": [
+        "selectors.js",
+        "destinations.js",
+        "intent-rules.js",
+        "image-library.js",
+        "image-selection-rules.js",
+        "content-packs.js",
+        "image-bot-client.js",
+        "dev/test-cases.js",
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*/*/*.png",
+        "assets/*/*/*.jpg",
+        "assets/*/*/*.jpeg",
+        "assets/*/*/*.svg",
+        "assets/*/*/*.webp"
+      ],
+      "matches": [
+        "https://salesmartly.com/*",
+        "https://*.salesmartly.com/*",
+        "http://salesmartly.com/*",
+        "http://*.salesmartly.com/*",
+        "file:///*",
+        "http://127.0.0.1/*",
+        "http://localhost/*"
+      ]
+    }
+  ]
+}

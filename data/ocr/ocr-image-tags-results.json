@@ -1,0 +1,1236 @@
+[
+  {
+    "destinationEn" : "shanghai",
+    "detectedText" : [
+      "閦晖",
+      "凝",
+      "YUYUAN&",
+      "•CHENGHUANGMIAO",
+      "LUJIAZUI&",
+      "THE BUND"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/上海/上海1.1.png",
+    "destinationZh" : "上海",
+    "suggestedTags" : [
+      "上海",
+      "shanghai",
+      "閦晖",
+      "yuyuan",
+      "chenghuangmiao",
+      "lujiazui",
+      "the-bund"
+    ]
+  },
+  {
+    "destinationEn" : "shanghai",
+    "detectedText" : [
+      "日子坊",
+      "Bnziiang",
+      "上薄蔭溪芝笨期蔔",
+      "UULI CHINA MUSEUN",
+      "田子坊",
+      "2105",
+      "Tianzifang",
+      "THE REFINET",
+      "Xintiandi",
+      "Wukang Road",
+      "Jingan Temple"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/上海/上海1.2.png",
+    "destinationZh" : "上海",
+    "suggestedTags" : [
+      "上海",
+      "shanghai",
+      "日子坊",
+      "bnziiang",
+      "上薄蔭溪芝笨期蔔",
+      "uuli-china-museun",
+      "田子坊",
+      "tianzifang",
+      "the-refinet",
+      "xintiandi",
+      "wukang-road",
+      "jingan-temple"
+    ]
+  },
+  {
+    "destinationEn" : "shanghai",
+    "detectedText" : [
+      "Shanghai",
+      "Disncyand"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/上海/上海1.3.png",
+    "destinationZh" : "上海",
+    "suggestedTags" : [
+      "上海",
+      "shanghai",
+      "disncyand"
+    ]
+  },
+  {
+    "destinationEn" : "shanghai",
+    "detectedText" : [
+      "Bund Night Tour",
+      "福州路",
+      "Fuzhou Rdl"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/上海/上海1.4.png",
+    "destinationZh" : "上海",
+    "suggestedTags" : [
+      "上海",
+      "shanghai",
+      "bund-night-tour",
+      "福州路",
+      "fuzhou-rdl"
+    ]
+  },
+  {
+    "destinationEn" : "shanghai",
+    "detectedText" : [
+      "200",
+      "NANJING",
+      "ROAD"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/上海/上海1.5.png",
+    "destinationZh" : "上海",
+    "suggestedTags" : [
+      "上海",
+      "shanghai",
+      "nanjing",
+      "road"
+    ]
+  },
+  {
+    "destinationEn" : "lijiang",
+    "detectedText" : [
+      "Yulong Snow",
+      "Mountain"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/丽江/丽江1.1.png",
+    "destinationZh" : "丽江",
+    "suggestedTags" : [
+      "丽江",
+      "lijiang",
+      "yulong-snow",
+      "mountain"
+    ]
+  },
+  {
+    "destinationEn" : "lijiang",
+    "detectedText" : [
+      "Blue oon Valley",
+      "Spruee Meadow"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/丽江/丽江1.2.png",
+    "destinationZh" : "丽江",
+    "suggestedTags" : [
+      "丽江",
+      "lijiang",
+      "blue-oon-valley",
+      "spruee-meadow"
+    ]
+  },
+  {
+    "destinationEn" : "lijiang",
+    "detectedText" : [
+      "Tiger Leaping",
+      "Gorge",
+      "The First Bend",
+      "of the Yangtze"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/丽江/丽江1.3.png",
+    "destinationZh" : "丽江",
+    "suggestedTags" : [
+      "丽江",
+      "lijiang",
+      "tiger-leaping",
+      "gorge",
+      "the-first-bend",
+      "of-the-yangtze"
+    ]
+  },
+  {
+    "destinationEn" : "lijiang",
+    "detectedText" : [
+      "White Sand",
+      "Town-",
+      "G",
+      "Mural",
+      "Experience",
+      "畫壁沙面",
+      "OEI："
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/丽江/丽江1.4.png",
+    "destinationZh" : "丽江",
+    "suggestedTags" : [
+      "丽江",
+      "lijiang",
+      "white-sand",
+      "town",
+      "mural",
+      "experience",
+      "畫壁沙面",
+      "oei"
+    ]
+  },
+  {
+    "destinationEn" : "yiwu",
+    "detectedText" : [
+      "YIWU INTERNATIONAL",
+      "TRADECITY",
+      "FOTANG ANCIENT TOWN"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/义乌/义乌.png",
+    "destinationZh" : "义乌",
+    "suggestedTags" : [
+      "义乌",
+      "yiwu",
+      "yiwu-international",
+      "tradecity",
+      "fotang-ancient-town"
+    ]
+  },
+  {
+    "destinationEn" : "fenghuang-ancient-town",
+    "detectedText" : [
+      "生椰",
+      "本铁",
+      "Phoenix Ancient Town",
+      "古城旅游区",
+      "Aaclent Towa Scenic Area",
+      "风風古城湿繁风朋"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/凤凰古城/ 凤凰古城1.2.png",
+    "destinationZh" : "凤凰古城",
+    "suggestedTags" : [
+      "凤凰古城",
+      "fenghuang-ancient-town",
+      "生椰",
+      "本铁",
+      "phoenix-ancient-town",
+      "古城旅游区",
+      "aaclent-towa-scenic-area",
+      "风風古城湿繁风朋"
+    ]
+  },
+  {
+    "destinationEn" : "fenghuang-ancient-town",
+    "detectedText" : [
+      "Nanhua Mountain",
+      "Forest Park",
+      "Qiliang Cave"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/凤凰古城/凤凰古城1.1.png",
+    "destinationZh" : "凤凰古城",
+    "suggestedTags" : [
+      "凤凰古城",
+      "fenghuang-ancient-town",
+      "nanhua-mountain",
+      "forest-park",
+      "qiliang-cave"
+    ]
+  },
+  {
+    "destinationEn" : "fenghuang-ancient-town",
+    "detectedText" : [
+      "Luojang"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/凤凰古城/凤凰古城1.3.png",
+    "destinationZh" : "凤凰古城",
+    "suggestedTags" : [
+      "凤凰古城",
+      "fenghuang-ancient-town",
+      "luojang"
+    ]
+  },
+  {
+    "destinationEn" : "beijing",
+    "detectedText" : [
+      "Temple of Heaven",
+      "00",
+      "Summer Palace"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/北京/北京1.1.png",
+    "destinationZh" : "北京",
+    "suggestedTags" : [
+      "北京",
+      "beijing",
+      "temple-of-heaven",
+      "summer-palace"
+    ]
+  },
+  {
+    "destinationEn" : "beijing",
+    "detectedText" : [
+      "Tiananmen Square",
+      "Jingshan Park",
+      "埽匠",
+      "he Forbidden City."
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/北京/北京1.2.png",
+    "destinationZh" : "北京",
+    "suggestedTags" : [
+      "北京",
+      "beijing",
+      "tiananmen-square",
+      "jingshan-park",
+      "埽匠",
+      "he-forbidden-city"
+    ]
+  },
+  {
+    "destinationEn" : "beijing",
+    "detectedText" : [
+      "Mutianyu Great Wall",
+      "Olympic Park"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/北京/北京1.3.png",
+    "destinationZh" : "北京",
+    "suggestedTags" : [
+      "北京",
+      "beijing",
+      "mutianyu-great-wall",
+      "olympic-park"
+    ]
+  },
+  {
+    "destinationEn" : "beijing",
+    "detectedText" : [
+      "AYERSA",
+      "UNIVERSAL",
+      "STUDIOS"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/北京/北京1.4.png",
+    "destinationZh" : "北京",
+    "suggestedTags" : [
+      "北京",
+      "beijing",
+      "ayersa",
+      "universal",
+      "studios"
+    ]
+  },
+  {
+    "destinationEn" : "beijing",
+    "detectedText" : [
+      "Nanluoguxiang"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/北京/北京2.1.png",
+    "destinationZh" : "北京",
+    "suggestedTags" : [
+      "北京",
+      "beijing",
+      "nanluoguxiang"
+    ]
+  },
+  {
+    "destinationEn" : "beijing",
+    "detectedText" : [
+      "Wangiujing",
+      "Pedestrian Street",
+      "BEUIN"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/北京/北京2.2.png",
+    "destinationZh" : "北京",
+    "suggestedTags" : [
+      "北京",
+      "beijing",
+      "wangiujing",
+      "pedestrian-street",
+      "beuin"
+    ]
+  },
+  {
+    "destinationEn" : "nanjing",
+    "detectedText" : [
+      "Sun Yat-sen",
+      "Mausoleum",
+      "Music Temple",
+      "Meiling Palace",
+      "Linggu Temple"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/南京/南京1.1.png",
+    "destinationZh" : "南京",
+    "suggestedTags" : [
+      "南京",
+      "nanjing",
+      "sun-yat-sen",
+      "mausoleum",
+      "music-temple",
+      "meiling-palace",
+      "linggu-temple"
+    ]
+  },
+  {
+    "destinationEn" : "nanjing",
+    "detectedText" : [
+      "NANJING",
+      "MUSEUM",
+      "PRESIDENTIAL",
+      "PALACE",
+      "MOSEUM",
+      "XUANWU",
+      "LAKE"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/南京/南京1.2.png",
+    "destinationZh" : "南京",
+    "suggestedTags" : [
+      "南京",
+      "nanjing",
+      "museum",
+      "presidential",
+      "palace",
+      "moseum",
+      "xuanwu",
+      "lake"
+    ]
+  },
+  {
+    "destinationEn" : "nanjing",
+    "detectedText" : [
+      "Confucius Temple",
+      "Grand Baoen Temple",
+      "Lao Men Dong",
+      "Zhonghua Gate"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/南京/南京1.3.png",
+    "destinationZh" : "南京",
+    "suggestedTags" : [
+      "南京",
+      "nanjing",
+      "confucius-temple",
+      "grand-baoen-temple",
+      "lao-men-dong",
+      "zhonghua-gate"
+    ]
+  },
+  {
+    "destinationEn" : "nanjing",
+    "detectedText" : [
+      "Xiantcng",
+      "Boolstore",
+      "limingTenple",
+      "殿寶蘆昆",
+      "heRoad"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/南京/南京1.4.jpg",
+    "destinationZh" : "南京",
+    "suggestedTags" : [
+      "南京",
+      "nanjing",
+      "xiantcng",
+      "boolstore",
+      "limingtenple",
+      "殿寶蘆昆",
+      "heroad"
+    ]
+  },
+  {
+    "destinationEn" : "nanjing",
+    "detectedText" : [
+      "Night Tour",
+      "Qinhuai River"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/南京/南京1.5.png",
+    "destinationZh" : "南京",
+    "suggestedTags" : [
+      "南京",
+      "nanjing",
+      "night-tour",
+      "qinhuai-river"
+    ]
+  },
+  {
+    "destinationEn" : "harbin",
+    "detectedText" : [
+      "HongZhuanStreet",
+      "Morning Market",
+      "Saint Sophia",
+      "Cathedral",
+      "Central Street",
+      "Yangmingtan",
+      "Bridge"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/哈尔滨/哈尔滨1.1.png",
+    "destinationZh" : "哈尔滨",
+    "suggestedTags" : [
+      "哈尔滨",
+      "harbin",
+      "hongzhuanstreet",
+      "morning-market",
+      "saint-sophia",
+      "cathedral",
+      "central-street",
+      "yangmingtan",
+      "bridge"
+    ]
+  },
+  {
+    "destinationEn" : "harbin",
+    "detectedText" : [
+      "winter Llarbin."
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/哈尔滨/哈尔滨1.2.png",
+    "destinationZh" : "哈尔滨",
+    "suggestedTags" : [
+      "哈尔滨",
+      "harbin",
+      "winter-llarbin"
+    ]
+  },
+  {
+    "destinationEn" : "harbin",
+    "detectedText" : [
+      "VogaAanor"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/哈尔滨/哈尔滨1.3.png",
+    "destinationZh" : "哈尔滨",
+    "suggestedTags" : [
+      "哈尔滨",
+      "harbin",
+      "vogaaanor"
+    ]
+  },
+  {
+    "destinationEn" : "dali",
+    "detectedText" : [
+      "Erhai Lake."
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/大理/大理1.1.png",
+    "destinationZh" : "大理",
+    "suggestedTags" : [
+      "大理",
+      "dali",
+      "erhai-lake"
+    ]
+  },
+  {
+    "destinationEn" : "dali",
+    "detectedText" : [
+      "Dali",
+      "Ancient Town",
+      "Chongsheng",
+      "Temple Three Pagodas",
+      "Cangshan"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/大理/大理1.2.png",
+    "destinationZh" : "大理",
+    "suggestedTags" : [
+      "大理",
+      "dali",
+      "ancient-town",
+      "chongsheng",
+      "temple-three-pagodas",
+      "cangshan"
+    ]
+  },
+  {
+    "destinationEn" : "dali",
+    "detectedText" : [
+      "Buterly Sprig",
+      "ZhouchengVilage",
+      "Tie-Dye Experience"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/大理/大理1.3.png",
+    "destinationZh" : "大理",
+    "suggestedTags" : [
+      "大理",
+      "dali",
+      "buterly-sprig",
+      "zhouchengvilage",
+      "tie-dye-experience"
+    ]
+  },
+  {
+    "destinationEn" : "dali",
+    "detectedText" : [
+      "Shuangang",
+      "Ancientown"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/大理/大理1.4.png",
+    "destinationZh" : "大理",
+    "suggestedTags" : [
+      "大理",
+      "dali",
+      "shuangang",
+      "ancientown"
+    ]
+  },
+  {
+    "destinationEn" : "guangzhou",
+    "detectedText" : [
+      "Chimelong",
+      "Safari Park"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/广州/广州1.1.png",
+    "destinationZh" : "广州",
+    "suggestedTags" : [
+      "广州",
+      "guangzhou",
+      "chimelong",
+      "safari-park"
+    ]
+  },
+  {
+    "destinationEn" : "guangzhou",
+    "detectedText" : [
+      "Canton Tower",
+      "蓬",
+      "Shangxiajiu",
+      "Pedestrian Street",
+      "Shamian",
+      "Island",
+      "滋"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/广州/广州1.2.png",
+    "destinationZh" : "广州",
+    "suggestedTags" : [
+      "广州",
+      "guangzhou",
+      "canton-tower",
+      "shangxiajiu",
+      "pedestrian-street",
+      "shamian",
+      "island"
+    ]
+  },
+  {
+    "destinationEn" : "guangzhou",
+    "detectedText" : [
+      "Sacred Heart",
+      "Cathedral",
+      "Beijing Road",
+      "Pedestrian Street",
+      "Yuexiu",
+      "Park",
+      "Sun Yat-sen",
+      "Memorial Hall"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/广州/广州1.3.png",
+    "destinationZh" : "广州",
+    "suggestedTags" : [
+      "广州",
+      "guangzhou",
+      "sacred-heart",
+      "cathedral",
+      "beijing-road",
+      "pedestrian-street",
+      "yuexiu",
+      "park",
+      "sun-yat-sen",
+      "memorial-hall"
+    ]
+  },
+  {
+    "destinationEn" : "guangzhou",
+    "detectedText" : [
+      "Yongqingtang",
+      "Huacheng Square",
+      "Pearl River",
+      "Night Cruise"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/广州/广州1.4.png",
+    "destinationZh" : "广州",
+    "suggestedTags" : [
+      "广州",
+      "guangzhou",
+      "yongqingtang",
+      "huacheng-square",
+      "pearl-river",
+      "night-cruise"
+    ]
+  },
+  {
+    "destinationEn" : "张家界",
+    "detectedText" : [
+      "wuingyuan"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/张家界/张家界1.1.png",
+    "destinationZh" : "张家界",
+    "suggestedTags" : [
+      "张家界",
+      "wuingyuan"
+    ]
+  },
+  {
+    "destinationEn" : "张家界",
+    "detectedText" : [
+      "Hianmen",
+      "Mountamn"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/张家界/张家界1.2.png",
+    "destinationZh" : "张家界",
+    "suggestedTags" : [
+      "张家界",
+      "hianmen",
+      "mountamn"
+    ]
+  },
+  {
+    "destinationEn" : "张家界",
+    "detectedText" : [
+      "Zhangjaje",
+      "Grand Can on"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/张家界/张家界1.3.png",
+    "destinationZh" : "张家界",
+    "suggestedTags" : [
+      "张家界",
+      "zhangjaje",
+      "grand-can-on"
+    ]
+  },
+  {
+    "destinationEn" : "chengdu",
+    "detectedText" : [
+      "Wuh",
+      "U",
+      "里",
+      "Jinli",
+      "锦",
+      "hcngdu Panda",
+      "墨錦",
+      "巧",
+      "丈化館"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/成都/成都1.1.png",
+    "destinationZh" : "成都",
+    "suggestedTags" : [
+      "成都",
+      "chengdu",
+      "wuh",
+      "jinli",
+      "hcngdu-panda",
+      "墨錦",
+      "丈化館"
+    ]
+  },
+  {
+    "destinationEn" : "chengdu",
+    "detectedText" : [
+      "Kuanzhai Alley",
+      "People's Park",
+      "Du Fu Thatched",
+      "Cottage"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/成都/成都1.2.png",
+    "destinationZh" : "成都",
+    "suggestedTags" : [
+      "成都",
+      "chengdu",
+      "kuanzhai-alley",
+      "people-s-park",
+      "du-fu-thatched",
+      "cottage"
+    ]
+  },
+  {
+    "destinationEn" : "chengdu",
+    "detectedText" : [
+      "OINGCHENG",
+      "MOUNTAIN",
+      "DUJANGYAN",
+      "F〇5"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/成都/成都1.3.png",
+    "destinationZh" : "成都",
+    "suggestedTags" : [
+      "成都",
+      "chengdu",
+      "oingcheng",
+      "mountain",
+      "dujangyan"
+    ]
+  },
+  {
+    "destinationEn" : "chengdu",
+    "detectedText" : [
+      "SANXINGDUI",
+      "MUSEUM"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/成都/成都1.4.png",
+    "destinationZh" : "成都",
+    "suggestedTags" : [
+      "成都",
+      "chengdu",
+      "sanxingdui",
+      "museum"
+    ]
+  },
+  {
+    "destinationEn" : "chengdu",
+    "detectedText" : [
+      "TAIKOO",
+      "CHUNXI",
+      "ROAD"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/成都/成都2.1.png",
+    "destinationZh" : "成都",
+    "suggestedTags" : [
+      "成都",
+      "chengdu",
+      "taikoo",
+      "chunxi",
+      "road"
+    ]
+  },
+  {
+    "destinationEn" : "chengdu",
+    "detectedText" : [
+      "Jini"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/成都/成都2.2.png",
+    "destinationZh" : "成都",
+    "suggestedTags" : [
+      "成都",
+      "chengdu",
+      "jini"
+    ]
+  },
+  {
+    "destinationEn" : "kunming",
+    "detectedText" : [
+      "STONE FOREST",
+      "JUXIANG CAVES"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/昆明/昆明1.1.png",
+    "destinationZh" : "昆明",
+    "suggestedTags" : [
+      "昆明",
+      "kunming",
+      "stone-forest",
+      "juxiang-caves"
+    ]
+  },
+  {
+    "destinationEn" : "kunming",
+    "detectedText" : [
+      "Dianchi",
+      "山山森菜"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/昆明/昆明1.2.png",
+    "destinationZh" : "昆明",
+    "suggestedTags" : [
+      "昆明",
+      "kunming",
+      "dianchi",
+      "山山森菜"
+    ]
+  },
+  {
+    "destinationEn" : "kunming",
+    "detectedText" : [
+      "Cuihu Park",
+      "Yuantong Temple",
+      "Kunming Old Street",
+      "雞窘",
+      "Golden Horse and",
+      "ade Rooster Archway"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/昆明/昆明1.3.png",
+    "destinationZh" : "昆明",
+    "suggestedTags" : [
+      "昆明",
+      "kunming",
+      "cuihu-park",
+      "yuantong-temple",
+      "kunming-old-street",
+      "雞窘",
+      "golden-horse-and",
+      "ade-rooster-archway"
+    ]
+  },
+  {
+    "destinationEn" : "hangzhou",
+    "detectedText" : [
+      "Westlake"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/杭州/杭州1.1.png",
+    "destinationZh" : "杭州",
+    "suggestedTags" : [
+      "杭州",
+      "hangzhou",
+      "westlake"
+    ]
+  },
+  {
+    "destinationEn" : "hangzhou",
+    "detectedText" : [
+      "寺隱",
+      "Lingyin Temple & Feilai Peak"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/杭州/杭州1.2.png",
+    "destinationZh" : "杭州",
+    "suggestedTags" : [
+      "杭州",
+      "hangzhou",
+      "寺隱",
+      "lingyin-temple-feilai-peak"
+    ]
+  },
+  {
+    "destinationEn" : "hangzhou",
+    "detectedText" : [
+      "Songcheng",
+      "Xixi Wetland",
+      "近"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/杭州/杭州1.3.png",
+    "destinationZh" : "杭州",
+    "suggestedTags" : [
+      "杭州",
+      "hangzhou",
+      "songcheng",
+      "xixi-wetland"
+    ]
+  },
+  {
+    "destinationEn" : "hangzhou",
+    "detectedText" : [
+      "Hefang Street",
+      "Xiaohe Zhi Street"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/杭州/杭州1.4.png",
+    "destinationZh" : "杭州",
+    "suggestedTags" : [
+      "杭州",
+      "hangzhou",
+      "hefang-street",
+      "xiaohe-zhi-street"
+    ]
+  },
+  {
+    "destinationEn" : "guilin",
+    "detectedText" : [
+      "Li River",
+      "Yangshuo"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/桂林/桂林1.1.png",
+    "destinationZh" : "桂林",
+    "suggestedTags" : [
+      "桂林",
+      "guilin",
+      "li-river",
+      "yangshuo"
+    ]
+  },
+  {
+    "destinationEn" : "guilin",
+    "detectedText" : [
+      "Longji Rice Terraces",
+      "Sun and Moon",
+      "Pagodas",
+      "Elephant",
+      "TrunkHill"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/桂林/桂林1.2.png",
+    "destinationZh" : "桂林",
+    "suggestedTags" : [
+      "桂林",
+      "guilin",
+      "longji-rice-terraces",
+      "sun-and-moon",
+      "pagodas",
+      "elephant",
+      "trunkhill"
+    ]
+  },
+  {
+    "destinationEn" : "guilin",
+    "detectedText" : [
+      "Xingping Ancient Town",
+      "Xiangong Hill",
+      "Yulong River",
+      "Bamboo Rafting"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/桂林/桂林1.3.png",
+    "destinationZh" : "桂林",
+    "suggestedTags" : [
+      "桂林",
+      "guilin",
+      "xingping-ancient-town",
+      "xiangong-hill",
+      "yulong-river",
+      "bamboo-rafting"
+    ]
+  },
+  {
+    "destinationEn" : "furong-town",
+    "detectedText" : [
+      "Furong Towil"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/芙蓉镇/芙蓉镇.png",
+    "destinationZh" : "芙蓉镇",
+    "suggestedTags" : [
+      "芙蓉镇",
+      "furong-town",
+      "furong-towil"
+    ]
+  },
+  {
+    "destinationEn" : "suzhou",
+    "detectedText" : [
+      "Ihuozheng Garden",
+      "Suzhou",
+      "Museum",
+      "Pingjiang",
+      "Road"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/苏州/苏州1.1.png",
+    "destinationZh" : "苏州",
+    "suggestedTags" : [
+      "苏州",
+      "suzhou",
+      "ihuozheng-garden",
+      "museum",
+      "pingjiang",
+      "road"
+    ]
+  },
+  {
+    "destinationEn" : "suzhou",
+    "detectedText" : [
+      "TigerHil",
+      "Hanshan Temple",
+      "2一第中美",
+      "QiLi Shan Tang",
+      "Lion Grove Garden"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/苏州/苏州1.2.png",
+    "destinationZh" : "苏州",
+    "suggestedTags" : [
+      "苏州",
+      "suzhou",
+      "tigerhil",
+      "hanshan-temple",
+      "一第中美",
+      "qili-shan-tang",
+      "lion-grove-garden"
+    ]
+  },
+  {
+    "destinationEn" : "suzhou",
+    "detectedText" : [
+      "Zhouzhuang"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/苏州/苏州1.3.png",
+    "destinationZh" : "苏州",
+    "suggestedTags" : [
+      "苏州",
+      "suzhou",
+      "zhouzhuang"
+    ]
+  },
+  {
+    "destinationEn" : "xian",
+    "detectedText" : [
+      "The Terracotta Army",
+      "Huaqing Palace"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/西安/西安1.1.png",
+    "destinationZh" : "西安",
+    "suggestedTags" : [
+      "西安",
+      "xian",
+      "the-terracotta-army",
+      "huaqing-palace"
+    ]
+  },
+  {
+    "destinationEn" : "xian",
+    "detectedText" : [
+      "Xian Ancient Wall",
+      "Zhonggu Pagoda",
+      "Huimin Street",
+      "Dayan Tower"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/西安/西安1.2.png",
+    "destinationZh" : "西安",
+    "suggestedTags" : [
+      "西安",
+      "xian",
+      "xian-ancient-wall",
+      "zhonggu-pagoda",
+      "huimin-street",
+      "dayan-tower"
+    ]
+  },
+  {
+    "destinationEn" : "xian",
+    "detectedText" : [
+      "SHAANXI HISTORY",
+      "MUSEUM"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/西安/西安1.3.png",
+    "destinationZh" : "西安",
+    "suggestedTags" : [
+      "西安",
+      "xian",
+      "shaanxi-history",
+      "museum"
+    ]
+  },
+  {
+    "destinationEn" : "xian",
+    "detectedText" : [
+      "Tang Dynasty",
+      "Never Night City"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/西安/西安1.4.png",
+    "destinationZh" : "西安",
+    "suggestedTags" : [
+      "西安",
+      "xian",
+      "tang-dynasty",
+      "never-night-city"
+    ]
+  },
+  {
+    "destinationEn" : "xian",
+    "detectedText" : [
+      "Xiaovan Tower"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/西安/西安1.5.png",
+    "destinationZh" : "西安",
+    "suggestedTags" : [
+      "西安",
+      "xian",
+      "xiaovan-tower"
+    ]
+  },
+  {
+    "destinationEn" : "chongqing",
+    "detectedText" : [
+      "JIEFANGBEI",
+      "HONGYADONG"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/重庆/重庆1.1.png",
+    "destinationZh" : "重庆",
+    "suggestedTags" : [
+      "重庆",
+      "chongqing",
+      "jiefangbei",
+      "hongyadong"
+    ]
+  },
+  {
+    "destinationEn" : "chongqing",
+    "detectedText" : [
+      "EIGHTEEN",
+      "LADDERS",
+      "◎GN",
+      "YANGTZE",
+      "RIVER CABLE WAY",
+      "LIGHT RAIL",
+      "THROUGH BUILDING"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/重庆/重庆1.2.png",
+    "destinationZh" : "重庆",
+    "suggestedTags" : [
+      "重庆",
+      "chongqing",
+      "eighteen",
+      "ladders",
+      "gn",
+      "yangtze",
+      "river-cable-way",
+      "light-rail",
+      "through-building"
+    ]
+  },
+  {
+    "destinationEn" : "chongqing",
+    "detectedText" : [
+      "Ciqikou",
+      "Ancient Town",
+      "Zhazidong",
+      "Prison",
+      "Bal",
+      "Mansion",
+      "Gele",
+      "Mountain"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/重庆/重庆1.3.png",
+    "destinationZh" : "重庆",
+    "suggestedTags" : [
+      "重庆",
+      "chongqing",
+      "ciqikou",
+      "ancient-town",
+      "zhazidong",
+      "prison",
+      "bal",
+      "mansion",
+      "gele",
+      "mountain"
+    ]
+  },
+  {
+    "destinationEn" : "chongqing",
+    "detectedText" : [
+      "WULONG",
+      "NATURAL BRIDGE",
+      "DAZU",
+      "ROCK CARVINGS"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/重庆/重庆1.4.png",
+    "destinationZh" : "重庆",
+    "suggestedTags" : [
+      "重庆",
+      "chongqing",
+      "wulong",
+      "natural-bridge",
+      "dazu",
+      "rock-carvings"
+    ]
+  },
+  {
+    "destinationEn" : "shangri_la",
+    "detectedText" : [
+      "Pudacuo",
+      "National Park"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/香格里拉/香格里拉1.1.png",
+    "destinationZh" : "香格里拉",
+    "suggestedTags" : [
+      "香格里拉",
+      "shangri-la",
+      "pudacuo",
+      "national-park"
+    ]
+  },
+  {
+    "destinationEn" : "shangri_la",
+    "detectedText" : [
+      "Balagezong Grand Canyon"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/香格里拉/香格里拉1.2.png",
+    "destinationZh" : "香格里拉",
+    "suggestedTags" : [
+      "香格里拉",
+      "shangri-la",
+      "balagezong-grand-canyon"
+    ]
+  },
+  {
+    "destinationEn" : "shangri_la",
+    "detectedText" : [
+      "NAPAHAI",
+      "SONGZANLIN",
+      "MONASTERY",
+      "DUKEZONG",
+      "ANCIENT TOWN"
+    ],
+    "file" : "/Users/apple/Desktop/发图bot图片库/香格里拉/香格里拉1.3.png",
+    "destinationZh" : "香格里拉",
+    "suggestedTags" : [
+      "香格里拉",
+      "shangri-la",
+      "napahai",
+      "songzanlin",
+      "monastery",
+      "dukezong",
+      "ancient-town"
+    ]
+  }
+]

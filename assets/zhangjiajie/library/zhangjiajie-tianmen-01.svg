@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#E8F3D9"/>
+  <rect x="56" y="56" width="1088" height="788" rx="36" fill="#FBFFF6" stroke="#95B87C" stroke-width="4"/>
+  <text x="600" y="210" text-anchor="middle" fill="#325128" font-size="58" font-family="Arial, sans-serif" font-weight="700">TEST ONLY</text>
+  <text x="600" y="330" text-anchor="middle" fill="#456C37" font-size="74" font-family="Arial, sans-serif" font-weight="700">Zhangjiajie</text>
+  <text x="600" y="430" text-anchor="middle" fill="#557F42" font-size="42" font-family="Arial, sans-serif" font-weight="600">Tianmen Mountain 01</text>
+  <text x="600" y="530" text-anchor="middle" fill="#51635D" font-size="34" font-family="Arial, sans-serif">Plugin Library Placeholder</text>
+  <text x="600" y="650" text-anchor="middle" fill="#9A3412" font-size="34" font-family="Arial, sans-serif" font-weight="700">测试占位图，禁止正式发送</text>
+</svg>

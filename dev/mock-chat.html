@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaleSmartly Mock Chat</title>
+    <style>
+      :root {
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+        color: #17324d;
+        background: #eaf1f7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background:
+          radial-gradient(circle at 12% 10%, #d7eef0 0, transparent 30%),
+          radial-gradient(circle at 88% 14%, #f8efd7 0, transparent 26%),
+          linear-gradient(135deg, #edf4f8, #dfe9f1);
+      }
+
+      .app-shell {
+        width: min(1180px, calc(100% - 32px));
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 28px 0 36px;
+      }
+
+      .topbar,
+      .test-lab,
+      .chat-card {
+        border: 1px solid rgba(115, 145, 168, 0.25);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 20px 60px rgba(33, 65, 90, 0.12);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 22px;
+        border-radius: 18px 18px 0 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 4px;
+        color: #2e8b8f;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(22px, 4vw, 32px);
+      }
+
+      .status-pill {
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #e2f5ed;
+        color: #14714f;
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .test-lab {
+        display: grid;
+        gap: 16px;
+        margin-top: 14px;
+        padding: 20px 22px;
+        border-radius: 0;
+      }
+
+      .test-lab-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        gap: 16px;
+      }
+
+      .asset-lab {
+        display: grid;
+        gap: 14px;
+        margin-top: 14px;
+        padding: 20px 22px;
+        border: 1px solid rgba(115, 145, 168, 0.25);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 20px 60px rgba(33, 65, 90, 0.12);
+      }
+
+      .bot-lab {
+        display: grid;
+        gap: 14px;
+        margin-top: 14px;
+        padding: 20px 22px;
+        border: 1px solid rgba(115, 145, 168, 0.25);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 20px 60px rgba(33, 65, 90, 0.12);
+      }
+
+      .bot-lab-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .bot-lab h2 {
+        margin: 0 0 8px;
+        font-size: 17px;
+      }
+
+      .bot-lab p {
+        margin: 0;
+        color: #5b7388;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .bot-lab label {
+        display: grid;
+        gap: 6px;
+        color: #486176;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .bot-lab select,
+      .bot-lab textarea {
+        width: 100%;
+        min-height: 40px;
+        padding: 8px 10px;
+        border: 1px solid #cad7e0;
+        border-radius: 10px;
+        background: #fff;
+        font: inherit;
+      }
+
+      .bot-lab textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      .bot-lab-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .bot-lab-actions button {
+        min-height: 40px;
+        padding: 0 16px;
+        border-radius: 10px;
+        border: 0;
+        background: #1c7f83;
+        color: white;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 750;
+      }
+
+      .bot-lab-actions button[data-variant="secondary"] {
+        background: #e9f0f5;
+        color: #2e526e;
+      }
+
+      .asset-lab-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .asset-lab h2 {
+        margin: 0 0 8px;
+        font-size: 17px;
+      }
+
+      .asset-lab p {
+        margin: 0;
+        color: #5b7388;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .asset-lab label {
+        display: grid;
+        gap: 6px;
+        color: #486176;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .asset-lab select,
+      .asset-lab input[type="file"] {
+        min-height: 40px;
+        padding: 8px 10px;
+        border: 1px solid #cad7e0;
+        border-radius: 10px;
+        background: #fff;
+        font: inherit;
+      }
+
+      .asset-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .asset-actions button {
+        min-height: 40px;
+        padding: 0 16px;
+        border-radius: 10px;
+        border: 0;
+        background: #1c7f83;
+        color: white;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 750;
+      }
+
+      .asset-actions button[data-variant="secondary"] {
+        background: #e9f0f5;
+        color: #2e526e;
+      }
+
+      .asset-status {
+        margin: 0;
+        padding: 11px 12px;
+        border-radius: 10px;
+        background: #f5f9fc;
+        color: #34556f;
+        font-size: 13px;
+      }
+
+      .asset-preview-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .asset-card {
+        overflow: hidden;
+        border: 1px solid #d8e3eb;
+        border-radius: 14px;
+        background: #fff;
+      }
+
+      .asset-card img,
+      .asset-card-fallback {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+
+      .asset-card-fallback {
+        display: grid;
+        place-items: center;
+        padding: 10px;
+        background: #eef4f8;
+        color: #5f7387;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .asset-card-body {
+        padding: 10px;
+      }
+
+      .asset-card-body strong,
+      .asset-card-body span {
+        display: block;
+      }
+
+      .asset-card-body span {
+        margin-top: 4px;
+        color: #60778b;
+        font-size: 12px;
+      }
+
+      .test-lab h2,
+      .pending-send-box h2 {
+        margin: 0 0 8px;
+        font-size: 17px;
+      }
+
+      .test-lab p {
+        margin: 0;
+        color: #5b7388;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .test-case-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .test-case-row select,
+      .test-case-row button {
+        min-height: 40px;
+        border-radius: 10px;
+        font: inherit;
+      }
+
+      .test-case-row select {
+        padding: 0 12px;
+        border: 1px solid #cad7e0;
+        background: #fff;
+      }
+
+      .test-case-row button,
+      .button {
+        border: 0;
+        cursor: pointer;
+        font-weight: 750;
+      }
+
+      .test-case-row button {
+        padding: 0 16px;
+        background: #1c7f83;
+        color: white;
+      }
+
+      .test-lab pre {
+        overflow: auto;
+        margin: 10px 0 0;
+        padding: 12px;
+        border-radius: 12px;
+        background: #f5f9fc;
+        color: #27445c;
+        font: 12px/1.45 "SFMono-Regular", Consolas, monospace;
+      }
+
+      .chat-card {
+        overflow: hidden;
+        border-top: 0;
+        border-radius: 0 0 18px 18px;
+      }
+
+      .conversation {
+        display: grid;
+        gap: 14px;
+        min-height: 520px;
+        padding: 26px;
+      }
+
+      .message-item {
+        display: flex;
+      }
+
+      .message-item[data-role="customer"] {
+        justify-content: flex-start;
+      }
+
+      .message-item[data-role="sales"] {
+        justify-content: flex-end;
+      }
+
+      .message-bubble {
+        max-width: min(700px, 85%);
+        padding: 13px 16px;
+        border-radius: 16px;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      .message-item[data-role="customer"] .message-bubble {
+        border-bottom-left-radius: 4px;
+        background: #eef4f8;
+      }
+
+      .message-item[data-role="sales"] .message-bubble {
+        border-bottom-right-radius: 4px;
+        background: #d9f0e8;
+      }
+
+      .message-meta {
+        display: block;
+        margin-bottom: 4px;
+        color: #71849a;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .composer {
+        display: grid;
+        gap: 12px;
+        padding: 18px 26px 24px;
+        border-top: 1px solid #e0e8ee;
+        background: #fbfdfe;
+      }
+
+      .composer textarea {
+        width: 100%;
+        min-height: 92px;
+        resize: vertical;
+        padding: 13px;
+        border: 1px solid #cbd9e3;
+        border-radius: 12px;
+        color: inherit;
+        font: inherit;
+      }
+
+      .composer-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .button {
+        min-height: 38px;
+        padding: 8px 14px;
+        border-radius: 9px;
+      }
+
+      .button-secondary {
+        background: #e9f0f5;
+        color: #2e526e;
+      }
+
+      .button-primary {
+        background: #1c7f83;
+        color: white;
+      }
+
+      .file-name {
+        color: #71849a;
+        font-size: 13px;
+      }
+
+      .file-help {
+        color: #b91c1c;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .test-note {
+        margin: 16px 0 0;
+        color: #587087;
+        font-size: 13px;
+      }
+
+      .pending-send-area {
+        padding: 0 26px 24px;
+        background: #fbfdfe;
+      }
+
+      .pending-send-box {
+        padding: 14px;
+        border: 1px dashed #bfd0dc;
+        border-radius: 14px;
+        background: #f4f9fc;
+      }
+
+      .pending-send-empty {
+        margin: 0;
+        color: #71849a;
+        font-size: 13px;
+      }
+
+      .pending-send-warning {
+        margin: 10px 0 0;
+        padding: 10px 12px;
+        border: 1px solid #fca5a5;
+        border-radius: 10px;
+        background: #fef2f2;
+        color: #b91c1c;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .pending-send-images {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .salesmartly-pending-card {
+        overflow: hidden;
+        border: 1px solid #d8e3eb;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .salesmartly-pending-card img,
+      .salesmartly-pending-fallback {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+      }
+
+      .salesmartly-pending-fallback {
+        display: grid;
+        place-items: center;
+        padding: 10px;
+        background: #eef4f8;
+        color: #5f7387;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .salesmartly-pending-caption {
+        padding: 8px 10px 10px;
+        color: #405669;
+        font-size: 12px;
+      }
+
+      .salesmartly-pending-warning {
+        margin: 8px 8px 0;
+        padding: 7px 8px;
+        border-radius: 8px;
+        background: #fef2f2;
+        color: #b91c1c;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      @media (max-width: 920px) {
+        .test-lab-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .asset-lab-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .bot-lab-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .pending-send-images {
+          grid-template-columns: 1fr;
+        }
+
+        .asset-preview-grid,
+        .asset-lab-grid,
+        .bot-lab-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Local Test Environment</p>
+          <h1>SaleSmartly Mock Chat</h1>
+        </div>
+        <span class="status-pill">No real messages</span>
+      </header>
+
+      <section class="test-lab" aria-label="测试用例切换器">
+        <div class="test-lab-grid">
+          <div>
+            <h2>测试用例切换器</h2>
+            <p>选择 18 条内置测试消息之一，点击“应用测试用例”后，mock 聊天消息会立即更新。</p>
+            <div class="test-case-row">
+              <select data-testid="test-case-select"></select>
+              <button type="button" data-testid="apply-test-case">应用测试用例</button>
+            </div>
+            <pre data-testid="test-case-expected"></pre>
+          </div>
+          <div>
+            <h2>识别结果</h2>
+            <p>点击扩展面板中的“读取当前聊天”后，这里会显示当前识别结果。</p>
+            <pre data-testid="test-case-result">等待识别。</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="asset-lab" aria-label="本地素材库">
+        <div>
+          <h2>本地素材库</h2>
+          <p>按目的地上传业务测试图片。保存后，扩展推荐面板会优先使用这里的图片；如果没有上传，才回退到测试占位图。</p>
+        </div>
+        <div class="asset-lab-grid">
+          <label>
+            目的地
+            <select data-testid="asset-destination">
+              <option value="zhangjiajie">Zhangjiajie</option>
+            </select>
+          </label>
+          <label>
+            上传图片
+            <input data-testid="asset-file-input" type="file" accept="image/*" multiple />
+          </label>
+          <label>
+            当前状态
+            <span class="asset-status" data-testid="asset-summary">当前未上传业务图片，将使用测试占位图。</span>
+          </label>
+        </div>
+        <div class="asset-actions">
+          <button type="button" data-testid="asset-save">保存到当前分类</button>
+          <button type="button" data-testid="asset-clear" data-variant="secondary">清空当前分类图片</button>
+        </div>
+        <div class="asset-preview-grid" data-testid="asset-preview-grid"></div>
+      </section>
+
+      <section class="bot-lab" aria-label="图片 Bot 模拟器">
+        <div>
+          <h2>图片 Bot 模拟器</h2>
+          <p>这里用于模拟独立发图 Bot 返回的结构化结果。启用后，扩展面板会优先使用这里的结果；关闭后，才会回退到本地规则识别。</p>
+        </div>
+        <div class="bot-lab-grid">
+          <label>
+            目的地
+            <select data-testid="bot-destination">
+              <option value="zhangjiajie">Zhangjiajie</option>
+            </select>
+          </label>
+          <label>
+            置信度
+            <select data-testid="bot-confidence">
+              <option value="high">high</option>
+              <option value="medium">medium</option>
+              <option value="low">low</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          Bot 返回预览 JSON
+          <textarea data-testid="bot-json-preview" spellcheck="false"></textarea>
+        </label>
+        <div class="bot-lab-actions">
+          <button type="button" data-testid="bot-apply">启用图片 Bot 结果</button>
+          <button type="button" data-testid="bot-clear" data-variant="secondary">关闭图片 Bot 结果</button>
+        </div>
+        <p class="asset-status" data-testid="bot-status">当前未启用图片 Bot 结果，扩展将使用本地规则识别。</p>
+      </section>
+
+      <section class="chat-card" aria-label="模拟聊天窗口">
+        <div class="conversation" data-testid="message-list">
+          <article class="message-item" data-testid="message-item" data-role="customer">
+            <div class="message-bubble">
+              <span class="message-meta" data-testid="message-meta">Customer · English</span>
+              <span data-testid="message-text">Is Zhangjiajie suitable for my 70-year-old parents?</span>
+            </div>
+          </article>
+
+          <article class="message-item" data-testid="message-item" data-role="sales">
+            <div class="message-bubble">
+              <span class="message-meta">Sales</span>
+              <span data-testid="message-text">We can suggest a relaxed itinerary with accessible transport.</span>
+            </div>
+          </article>
+
+          <article class="message-item" data-testid="message-item" data-role="customer">
+            <div class="message-bubble">
+              <span class="message-meta" data-testid="message-meta">Customer · Indonesian</span>
+              <span data-testid="message-text">Apakah Zhangjiajie cocok untuk orang tua?</span>
+            </div>
+          </article>
+
+          <article class="message-item" data-testid="message-item" data-role="sales">
+            <div class="message-bubble">
+              <span class="message-meta">Sales</span>
+              <span data-testid="message-text">We can adjust the pace and include rest stops.</span>
+            </div>
+          </article>
+
+          <article class="message-item" data-testid="message-item" data-role="customer">
+            <div class="message-bubble">
+              <span class="message-meta" data-testid="message-meta">Customer · Spanish</span>
+              <span data-testid="message-text">¿Zhangjiajie es adecuado para viajar con mis padres?</span>
+            </div>
+          </article>
+
+          <article class="message-item" data-testid="message-item" data-role="customer">
+            <div class="message-bubble">
+              <span class="message-meta" data-testid="message-meta">Customer · English</span>
+              <span data-testid="message-text">What kind of walking is required in Zhangjiajie?</span>
+            </div>
+          </article>
+
+          <article class="message-item" data-testid="message-item" data-role="customer">
+            <div class="message-bubble">
+              <span class="message-meta" data-testid="message-meta">Customer · Indonesian</span>
+              <span data-testid="message-text">Apakah ada pilihan tur yang lebih santai?</span>
+            </div>
+          </article>
+        </div>
+
+        <form class="composer" data-testid="chat-input-area">
+          <textarea
+            data-testid="chat-input"
+            aria-label="聊天输入框"
+            placeholder="输入测试消息..."
+          ></textarea>
+          <div class="composer-actions">
+            <div>
+              <span class="button button-secondary" aria-hidden="true">图片从素材库加入</span>
+              <span class="file-name" data-testid="selected-file-names">当前未选择上传图片</span>
+              <div class="file-help">先在上方“本地素材库”保存图片，再在扩展面板把勾选图片加入 mock 待发送区。</div>
+            </div>
+            <button class="button button-primary" data-testid="send-button" type="submit">
+              发送
+            </button>
+          </div>
+        </form>
+
+        <section class="pending-send-area" data-testid="pending-send-area">
+          <div class="pending-send-box">
+            <h2>待发送图片区</h2>
+            <p class="pending-send-empty" data-testid="pending-send-empty">还没有加入待发送图片。</p>
+            <p class="pending-send-warning" data-testid="placeholder-warning" hidden>
+              当前待发送区包含测试占位图，禁止正式发送给真实客户。
+            </p>
+            <div class="pending-send-images" data-testid="pending-send-images"></div>
+          </div>
+        </section>
+      </section>
+
+      <p class="test-note">
+        本页面只用于本地扩展测试。扩展的“加入发送区”和“插入测试文字”都不会点击“发送”。
+      </p>
+    </main>
+
+    <script src="test-cases.js"></script>
+    <script>
+      const MOCK_ASSET_LIBRARY_KEY = 'salesmartly_mock_asset_library_v1';
+      const MOCK_IMAGE_BOT_RESULT_KEY = 'salesmartly_mock_image_bot_result_v1';
+      const selectedFileNames = document.querySelector('[data-testid="selected-file-names"]');
+      const composer = document.querySelector('[data-testid="chat-input-area"]');
+      const testCaseSelect = document.querySelector('[data-testid="test-case-select"]');
+      const applyTestCaseButton = document.querySelector('[data-testid="apply-test-case"]');
+      const testCaseExpected = document.querySelector('[data-testid="test-case-expected"]');
+      const messageItems = Array.from(document.querySelectorAll('[data-testid="message-item"][data-role="customer"]'));
+      const statusPill = document.querySelector('.status-pill');
+      const assetDestination = document.querySelector('[data-testid="asset-destination"]');
+      const assetFileInput = document.querySelector('[data-testid="asset-file-input"]');
+      const assetSummary = document.querySelector('[data-testid="asset-summary"]');
+      const assetPreviewGrid = document.querySelector('[data-testid="asset-preview-grid"]');
+      const assetSaveButton = document.querySelector('[data-testid="asset-save"]');
+      const assetClearButton = document.querySelector('[data-testid="asset-clear"]');
+      const botDestination = document.querySelector('[data-testid="bot-destination"]');
+      const botConfidence = document.querySelector('[data-testid="bot-confidence"]');
+      const botJsonPreview = document.querySelector('[data-testid="bot-json-preview"]');
+      const botApplyButton = document.querySelector('[data-testid="bot-apply"]');
+      const botClearButton = document.querySelector('[data-testid="bot-clear"]');
+      const botStatus = document.querySelector('[data-testid="bot-status"]');
+      let stagedAssetFiles = [];
+
+      function readMockBotResult() {
+        try {
+          const raw = window.localStorage.getItem(MOCK_IMAGE_BOT_RESULT_KEY);
+          return raw ? JSON.parse(raw) : null;
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function writeMockBotResult(payload) {
+        window.localStorage.setItem(MOCK_IMAGE_BOT_RESULT_KEY, JSON.stringify(payload));
+      }
+
+      function buildBotPayload() {
+        return {
+          destination: botDestination.value,
+          confidence: botConfidence.value,
+          matchedTerms: {
+            destination: {
+              [botDestination.value]: [botDestination.value]
+            }
+          },
+          blockedReason: null
+        };
+      }
+
+      function renderBotPreview() {
+        const payload = buildBotPayload();
+        botJsonPreview.value = JSON.stringify(payload, null, 2);
+      }
+
+      function syncBotStatus() {
+        const saved = readMockBotResult();
+        if (saved && saved.enabled && saved.payload) {
+          botStatus.textContent = `当前已启用图片 Bot 结果：${saved.payload.destination}。扩展将优先使用该结果。`;
+          return;
+        }
+
+        botStatus.textContent = '当前未启用图片 Bot 结果，扩展将使用本地规则识别。';
+      }
+
+      function applyMockBotResult() {
+        let payload = buildBotPayload();
+
+        try {
+          const edited = JSON.parse(botJsonPreview.value);
+          payload = {
+            ...payload,
+            ...edited
+          };
+        } catch (error) {
+          botStatus.textContent = 'JSON 格式无效，已按上方表单值生成默认图片 Bot 结果。';
+        }
+
+        writeMockBotResult({
+          enabled: true,
+          payload
+        });
+        renderBotPreview();
+        syncBotStatus();
+      }
+
+      function clearMockBotResult() {
+        window.localStorage.removeItem(MOCK_IMAGE_BOT_RESULT_KEY);
+        syncBotStatus();
+      }
+
+      function readAssetLibrary() {
+        try {
+          const raw = window.localStorage.getItem(MOCK_ASSET_LIBRARY_KEY);
+          return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function writeAssetLibrary(library) {
+        window.localStorage.setItem(MOCK_ASSET_LIBRARY_KEY, JSON.stringify(library));
+      }
+
+      function getAssetBucket(destination) {
+        const library = readAssetLibrary();
+        const destinationBucket = library[destination];
+        return Array.isArray(destinationBucket)
+          ? destinationBucket
+          : destinationBucket && typeof destinationBucket === 'object'
+            ? Object.values(destinationBucket).flatMap((bucket) =>
+                Array.isArray(bucket) ? bucket : []
+              )
+            : [];
+      }
+
+      function updateAssetSummary() {
+        const destination = assetDestination.value;
+        const savedImages = getAssetBucket(destination);
+        const stagedNames = stagedAssetFiles.map((file) => file.name);
+
+        if (stagedNames.length > 0) {
+          selectedFileNames.textContent = `待保存：${stagedNames.join('、')}`;
+        } else if (savedImages.length > 0) {
+          selectedFileNames.textContent = `已保存 ${savedImages.length} 张业务图片`;
+        } else {
+          selectedFileNames.textContent = '当前未选择上传图片';
+        }
+
+        assetSummary.textContent =
+          savedImages.length > 0
+            ? `当前 ${destination} 已保存 ${savedImages.length} 张业务图片，推荐面板将优先使用这些图片。`
+            : `当前 ${destination} 未上传业务图片，将使用测试占位图。`;
+      }
+
+      function renderAssetPreview() {
+        const destination = assetDestination.value;
+        const savedImages = getAssetBucket(destination);
+        assetPreviewGrid.replaceChildren();
+
+        if (savedImages.length === 0) {
+          const empty = document.createElement('p');
+          empty.className = 'asset-status';
+          empty.textContent = '当前分类还没有业务图片。';
+          assetPreviewGrid.appendChild(empty);
+          updateAssetSummary();
+          return;
+        }
+
+        savedImages.forEach((imageMeta, index) => {
+          const card = document.createElement('article');
+          card.className = 'asset-card';
+
+          const image = document.createElement('img');
+          image.src = imageMeta.dataUrl;
+          image.alt = imageMeta.alt || imageMeta.fileName;
+
+          const fallback = document.createElement('div');
+          fallback.className = 'asset-card-fallback';
+          fallback.hidden = true;
+          fallback.textContent = `${imageMeta.fileName} 加载失败`;
+          image.addEventListener('error', () => {
+            image.hidden = true;
+            fallback.hidden = false;
+          });
+
+          const body = document.createElement('div');
+          body.className = 'asset-card-body';
+          body.innerHTML = `
+            <strong>${imageMeta.englishName || `Uploaded Image ${index + 1}`}</strong>
+            <span>${imageMeta.fileName}</span>
+            <span>${imageMeta.chineseName || '业务上传图片'}</span>
+          `;
+
+          card.appendChild(image);
+          card.appendChild(fallback);
+          card.appendChild(body);
+          assetPreviewGrid.appendChild(card);
+        });
+
+        updateAssetSummary();
+      }
+
+      function fileToDataUrl(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(String(reader.result || ''));
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+      }
+
+      async function saveAssetFiles() {
+        if (stagedAssetFiles.length === 0) {
+          assetSummary.textContent = '请先选择至少一张图片。';
+          return;
+        }
+
+        const destination = assetDestination.value;
+        const encodedImages = await Promise.all(
+          stagedAssetFiles.map(async (file, index) => ({
+            id: `${destination}-${Date.now()}-${index + 1}`,
+            fileName: file.name,
+            dataUrl: await fileToDataUrl(file),
+            englishName: `${destination} image ${index + 1}`,
+            chineseName: '业务上传图片',
+            alt: file.name,
+            defaultSelected: true
+          }))
+        );
+
+        const library = readAssetLibrary();
+        library[destination] = encodedImages;
+        writeAssetLibrary(library);
+
+        stagedAssetFiles = [];
+        assetFileInput.value = '';
+        renderAssetPreview();
+        assetSummary.textContent = `已保存 ${encodedImages.length} 张业务图片到 ${destination}。请回到扩展面板重新读取当前聊天。`;
+      }
+
+      function clearAssetBucket() {
+        const destination = assetDestination.value;
+        const library = readAssetLibrary();
+
+        if (library[destination]) {
+          delete library[destination];
+        }
+
+        writeAssetLibrary(library);
+        stagedAssetFiles = [];
+        assetFileInput.value = '';
+        renderAssetPreview();
+        assetSummary.textContent = `已清空 ${destination} 的业务图片，将回退到测试占位图。`;
+      }
+
+      function inferLanguageLabel(message) {
+        const text = (message || '').toLowerCase();
+        if (text.includes('apakah') || text.includes('keluarga') || text.includes('orang tua')) {
+          return 'Customer · Indonesian';
+        }
+        if (text.includes('¿') || text.includes('familia') || text.includes('padres')) {
+          return 'Customer · Spanish';
+        }
+        return 'Customer · English';
+      }
+
+      function populateTestCases() {
+        globalThis.TEST_CASES.forEach((testCase) => {
+          const option = document.createElement('option');
+          option.value = testCase.id;
+          option.textContent = `${testCase.label} - ${testCase.description}`;
+          testCaseSelect.appendChild(option);
+        });
+      }
+
+      function renderExpected(testCase) {
+        testCaseExpected.textContent = JSON.stringify(testCase.expected, null, 2);
+      }
+
+      function applyTestCase(testCaseId) {
+        const testCase = globalThis.TEST_CASES.find((item) => item.id === testCaseId);
+        if (!testCase) {
+          return;
+        }
+
+        messageItems.forEach((messageItem, index) => {
+          const textNode = messageItem.querySelector('[data-testid="message-text"]');
+          const metaNode = messageItem.querySelector('[data-testid="message-meta"]');
+          const nextMessage = testCase.messages[index] || '';
+
+          textNode.textContent = nextMessage;
+          metaNode.textContent = inferLanguageLabel(nextMessage);
+          messageItem.hidden = nextMessage.length === 0;
+        });
+
+        renderExpected(testCase);
+        const resultPanel = document.querySelector('[data-testid="test-case-result"]');
+        resultPanel.textContent = '测试消息已切换。请点击扩展面板中的“读取当前聊天”。';
+      }
+
+      selectedFileNames.textContent = '当前未选择上传图片';
+
+      composer.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const hasPlaceholder = Boolean(
+          document.querySelector('[data-testid="pending-send-images"] [data-placeholder-image="true"]')
+        );
+
+        if (hasPlaceholder) {
+          window.alert('警告：当前待发送内容包含测试占位图，禁止正式发送。此页面不会连接任何服务。');
+          return;
+        }
+
+        window.alert('这是本地模拟页面：发送按钮不会连接任何服务。');
+      });
+
+      applyTestCaseButton.addEventListener('click', () => {
+        applyTestCase(testCaseSelect.value);
+      });
+
+      assetFileInput.addEventListener('change', () => {
+        stagedAssetFiles = Array.from(assetFileInput.files || []);
+        updateAssetSummary();
+      });
+
+      assetDestination.addEventListener('change', renderAssetPreview);
+      assetIntent.addEventListener('change', renderAssetPreview);
+      assetSaveButton.addEventListener('click', () => {
+        saveAssetFiles().catch(() => {
+          assetSummary.textContent = '保存图片失败，请重试。';
+        });
+      });
+      assetClearButton.addEventListener('click', clearAssetBucket);
+      [botDestination, botConfidence].forEach((element) => {
+        element.addEventListener('change', renderBotPreview);
+      });
+      botApplyButton.addEventListener('click', applyMockBotResult);
+      botClearButton.addEventListener('click', clearMockBotResult);
+
+      populateTestCases();
+      if (globalThis.TEST_CASES.length > 0) {
+        testCaseSelect.value = globalThis.TEST_CASES[0].id;
+        applyTestCase(globalThis.TEST_CASES[0].id);
+      }
+      renderAssetPreview();
+      renderBotPreview();
+      syncBotStatus();
+
+      async function loadScriptSequentially(filePath) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = filePath;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+        });
+      }
+
+      async function loadLocalAssistantFallback() {
+        if (document.getElementById('salesmartly-test-assistant-panel')) {
+          return;
+        }
+
+        if (!document.querySelector('link[data-local-assistant-style]')) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = 'styles.css';
+          link.setAttribute('data-local-assistant-style', 'true');
+          document.head.appendChild(link);
+        }
+
+        globalThis.chrome = globalThis.chrome || {};
+        globalThis.chrome.runtime = globalThis.chrome.runtime || {
+          getURL(relativePath) {
+            return new URL(relativePath, window.location.href).toString();
+          }
+        };
+
+        await loadScriptSequentially('selectors.js');
+        await loadScriptSequentially('intent-rules.js');
+        await loadScriptSequentially('content-packs.js');
+        await loadScriptSequentially('content.js');
+
+        statusPill.textContent = 'Local fallback active';
+      }
+
+      window.setTimeout(() => {
+        if (!document.getElementById('salesmartly-test-assistant-panel')) {
+          loadLocalAssistantFallback().catch(() => {
+            statusPill.textContent = 'Panel failed to load';
+          });
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1544 @@
+[
+  {
+    "id": "shanghai-1-1",
+    "destination": "shanghai",
+    "title": "Yu Garden",
+    "titleZh": "上海",
+    "file": "assets/shanghai/library/shanghai-1-1.png",
+    "tags": [
+      "上海",
+      "shanghai",
+      "閦晖",
+      "yu-garden",
+      "chenghuang-temple",
+      "lujiazui",
+      "bund"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shanghai-1-2",
+    "destination": "shanghai",
+    "title": "Tianzifang",
+    "titleZh": "上海",
+    "file": "assets/shanghai/library/shanghai-1-2.png",
+    "tags": [
+      "上海",
+      "shanghai",
+      "日子坊",
+      "上薄蔭溪芝笨期蔔",
+      "田子坊",
+      "tianzifang",
+      "xintiandi",
+      "wukang-road",
+      "jingan-temple"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shanghai-1-3",
+    "destination": "shanghai",
+    "title": "Shanghai Disneyland",
+    "titleZh": "上海",
+    "file": "assets/shanghai/library/shanghai-1-3.png",
+    "tags": [
+      "上海",
+      "shanghai",
+      "shanghai-disneyland"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shanghai-1-4",
+    "destination": "shanghai",
+    "title": "Bund Night Tour",
+    "titleZh": "上海",
+    "file": "assets/shanghai/library/shanghai-1-4.png",
+    "tags": [
+      "上海",
+      "shanghai",
+      "bund-night-tour",
+      "福州路",
+      "fuzhou-rdl",
+      "oriental-pearl",
+      "the-bund"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shanghai-1-5",
+    "destination": "shanghai",
+    "title": "Road",
+    "titleZh": "上海",
+    "file": "assets/shanghai/library/shanghai-1-5.png",
+    "tags": [
+      "上海",
+      "shanghai",
+      "nanjing",
+      "road",
+      "zhujiajiao"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "lijiang-1-1",
+    "destination": "lijiang",
+    "title": "Yulong Snow",
+    "titleZh": "丽江",
+    "file": "assets/lijiang/library/lijiang-1-1.png",
+    "tags": [
+      "丽江",
+      "lijiang",
+      "yulong-snow"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "lijiang-1-2",
+    "destination": "lijiang",
+    "title": "Blue Moon Valley",
+    "titleZh": "丽江",
+    "file": "assets/lijiang/library/lijiang-1-2.png",
+    "tags": [
+      "丽江",
+      "lijiang",
+      "blue-moon-valley",
+      "spruce-meadow"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "lijiang-1-3",
+    "destination": "lijiang",
+    "title": "Tiger Leaping",
+    "titleZh": "丽江",
+    "file": "assets/lijiang/library/lijiang-1-3.png",
+    "tags": [
+      "丽江",
+      "lijiang",
+      "tiger-leaping",
+      "gorge",
+      "first-bend-of-yangtze-river"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "lijiang-1-4",
+    "destination": "lijiang",
+    "title": "Baisha Ancient Town",
+    "titleZh": "丽江",
+    "file": "assets/lijiang/library/lijiang-1-4.png",
+    "tags": [
+      "丽江",
+      "lijiang",
+      "baisha-ancient-town",
+      "baisha-mural"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "yiwu-1786353762818",
+    "destination": "yiwu",
+    "title": "Yiwu Market",
+    "titleZh": "义乌",
+    "file": "assets/yiwu/library/yiwu-1786353762818.png",
+    "tags": [
+      "义乌",
+      "yiwu",
+      "yiwu-market",
+      "international-trade-city",
+      "fotang-ancient-town"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "fenghuang-ancient-town-1-2",
+    "destination": "fenghuang-ancient-town",
+    "title": "Phoenix Ancient Town",
+    "titleZh": "凤凰古城",
+    "file": "assets/fenghuang-ancient-town/library/fenghuang-ancient-town-1-2.png",
+    "tags": [
+      "凤凰古城",
+      "fenghuang-ancient-town",
+      "phoenix-ancient-town",
+      "ancient-town-scenic-area"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "fenghuang-ancient-town-1-1",
+    "destination": "fenghuang-ancient-town",
+    "title": "Nanhua Mountain",
+    "titleZh": "凤凰古城",
+    "file": "assets/fenghuang-ancient-town/library/fenghuang-ancient-town-1-1.png",
+    "tags": [
+      "凤凰古城",
+      "fenghuang-ancient-town",
+      "nanhua-mountain",
+      "forest-park",
+      "qiliang-cave"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "fenghuang-ancient-town-1-3",
+    "destination": "fenghuang-ancient-town",
+    "title": "Luojang",
+    "titleZh": "凤凰古城",
+    "file": "assets/fenghuang-ancient-town/library/fenghuang-ancient-town-1-3.png",
+    "tags": [
+      "凤凰古城",
+      "fenghuang-ancient-town",
+      "luojang",
+      "tuojiang-river"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "beijing-1-1",
+    "destination": "beijing",
+    "title": "Temple Of Heaven",
+    "titleZh": "北京",
+    "file": "assets/beijing/library/beijing-1-1.png",
+    "tags": [
+      "北京",
+      "beijing",
+      "temple-of-heaven",
+      "summer-palace"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "beijing-1-2",
+    "destination": "beijing",
+    "title": "Tiananmen Square",
+    "titleZh": "北京",
+    "file": "assets/beijing/library/beijing-1-2.png",
+    "tags": [
+      "北京",
+      "beijing",
+      "tiananmen-square",
+      "jingshan-park",
+      "forbidden-city"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "beijing-1-3",
+    "destination": "beijing",
+    "title": "Mutianyu Great Wall",
+    "titleZh": "北京",
+    "file": "assets/beijing/library/beijing-1-3.png",
+    "tags": [
+      "北京",
+      "beijing",
+      "mutianyu-great-wall",
+      "olympic-park"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "beijing-1-4",
+    "destination": "beijing",
+    "title": "Universal",
+    "titleZh": "北京",
+    "file": "assets/beijing/library/beijing-1-4.png",
+    "tags": [
+      "北京",
+      "beijing",
+      "universal",
+      "studios",
+      "universal-beijing-resort",
+      "universal-studios"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "beijing-2-1",
+    "destination": "beijing",
+    "title": "Nanluoguxiang",
+    "titleZh": "北京",
+    "file": "assets/beijing/library/beijing-2-1.png",
+    "tags": [
+      "北京",
+      "beijing",
+      "nanluoguxiang"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "beijing-2-2",
+    "destination": "beijing",
+    "title": "Wangfujing",
+    "titleZh": "北京",
+    "file": "assets/beijing/library/beijing-2-2.png",
+    "tags": [
+      "北京",
+      "beijing",
+      "wangfujing",
+      "pedestrian-street"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "nanjing-1-1",
+    "destination": "nanjing",
+    "title": "Sun Yat Sen Memorial Hall",
+    "titleZh": "南京",
+    "file": "assets/nanjing/library/nanjing-1-1.png",
+    "tags": [
+      "南京",
+      "nanjing",
+      "sun-yat-sen-memorial-hall",
+      "music-stage",
+      "meiling-palace",
+      "linggu-temple",
+      "sun-yat-sen-mausoleum"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "nanjing-1-2",
+    "destination": "nanjing",
+    "title": "Museum",
+    "titleZh": "南京",
+    "file": "assets/nanjing/library/nanjing-1-2.png",
+    "tags": [
+      "南京",
+      "nanjing",
+      "museum",
+      "presidential-palace",
+      "xuanwu-lake",
+      "nanjing-museum"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "nanjing-1-3",
+    "destination": "nanjing",
+    "title": "Confucius Temple",
+    "titleZh": "南京",
+    "file": "assets/nanjing/library/nanjing-1-3.png",
+    "tags": [
+      "南京",
+      "nanjing",
+      "confucius-temple",
+      "grand-baoen-temple",
+      "lao-men-dong",
+      "zhonghua-gate",
+      "laomendong"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "nanjing-1-4",
+    "destination": "nanjing",
+    "title": "Xiantcng",
+    "titleZh": "南京",
+    "file": "assets/nanjing/library/nanjing-1-4.jpg",
+    "tags": [
+      "南京",
+      "nanjing",
+      "xiantcng",
+      "boolstore",
+      "limingtenple",
+      "殿寶蘆昆",
+      "heroad",
+      "qinhuai-river"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "nanjing-1-5",
+    "destination": "nanjing",
+    "title": "Night Tour",
+    "titleZh": "南京",
+    "file": "assets/nanjing/library/nanjing-1-5.png",
+    "tags": [
+      "南京",
+      "nanjing",
+      "night-tour",
+      "qinhuai-river",
+      "niushoushan"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "harbin-1-1",
+    "destination": "harbin",
+    "title": "Hongzhuan Street",
+    "titleZh": "哈尔滨",
+    "file": "assets/harbin/library/harbin-1-1.png",
+    "tags": [
+      "哈尔滨",
+      "harbin",
+      "hongzhuan-street",
+      "morning-market",
+      "saint-sophia",
+      "central-street",
+      "yangmingtan",
+      "bridge"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "harbin-1-2",
+    "destination": "harbin",
+    "title": "Winter Harbin",
+    "titleZh": "哈尔滨",
+    "file": "assets/harbin/library/harbin-1-2.png",
+    "tags": [
+      "哈尔滨",
+      "harbin",
+      "winter-harbin",
+      "harbin-ice-and-snow-world"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "harbin-1-3",
+    "destination": "harbin",
+    "title": "Volga Manor",
+    "titleZh": "哈尔滨",
+    "file": "assets/harbin/library/harbin-1-3.png",
+    "tags": [
+      "哈尔滨",
+      "harbin",
+      "volga-manor"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "dali-1-1",
+    "destination": "dali",
+    "title": "Erhai Lake",
+    "titleZh": "大理",
+    "file": "assets/dali/library/dali-1-1.png",
+    "tags": [
+      "大理",
+      "dali",
+      "erhai-lake"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "dali-1-2",
+    "destination": "dali",
+    "title": "Ancient Town",
+    "titleZh": "大理",
+    "file": "assets/dali/library/dali-1-2.png",
+    "tags": [
+      "大理",
+      "dali",
+      "ancient-town",
+      "chongsheng",
+      "three-pagodas",
+      "chongsheng-temple",
+      "cangshan"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "dali-1-3",
+    "destination": "dali",
+    "title": "Butterfly Spring",
+    "titleZh": "大理",
+    "file": "assets/dali/library/dali-1-3.png",
+    "tags": [
+      "大理",
+      "dali",
+      "butterfly-spring",
+      "zhoucheng-village",
+      "tie-dye"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "dali-1-4",
+    "destination": "dali",
+    "title": "Shuangang",
+    "titleZh": "大理",
+    "file": "assets/dali/library/dali-1-4.png",
+    "tags": [
+      "大理",
+      "dali",
+      "shuangang",
+      "ancient-town",
+      "shuanglang"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guangzhou-1-1",
+    "destination": "guangzhou",
+    "title": "Chimelong",
+    "titleZh": "广州",
+    "file": "assets/guangzhou/library/guangzhou-1-1.png",
+    "tags": [
+      "广州",
+      "guangzhou",
+      "chimelong",
+      "safari-park"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guangzhou-1-2",
+    "destination": "guangzhou",
+    "title": "Canton Tower",
+    "titleZh": "广州",
+    "file": "assets/guangzhou/library/guangzhou-1-2.png",
+    "tags": [
+      "广州",
+      "guangzhou",
+      "canton-tower",
+      "shangxiajiu-pedestrian-street",
+      "pedestrian-street",
+      "shamian",
+      "island",
+      "shamian-island"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guangzhou-1-3",
+    "destination": "guangzhou",
+    "title": "Sacred Heart Cathedral",
+    "titleZh": "广州",
+    "file": "assets/guangzhou/library/guangzhou-1-3.png",
+    "tags": [
+      "广州",
+      "guangzhou",
+      "sacred-heart-cathedral",
+      "beijing-road",
+      "pedestrian-street",
+      "yuexiu-park",
+      "sun-yat-sen-memorial-hall"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guangzhou-1-4",
+    "destination": "guangzhou",
+    "title": "Yongqingfang",
+    "titleZh": "广州",
+    "file": "assets/guangzhou/library/guangzhou-1-4.png",
+    "tags": [
+      "广州",
+      "guangzhou",
+      "yongqingfang",
+      "huacheng-square",
+      "pearl-river",
+      "pearl-river-night-cruise"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "zhangjiajie-1-1",
+    "destination": "zhangjiajie",
+    "title": "Wulingyuan",
+    "titleZh": "张家界",
+    "file": "assets/zhangjiajie/library/zhangjiajie-1-1.png",
+    "tags": [
+      "张家界",
+      "wulingyuan"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "zhangjiajie-1-2",
+    "destination": "zhangjiajie",
+    "title": "Tianmen Mountain",
+    "titleZh": "张家界",
+    "file": "assets/zhangjiajie/library/zhangjiajie-1-2.png",
+    "tags": [
+      "张家界",
+      "tianmen-mountain"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "zhangjiajie-1-3",
+    "destination": "zhangjiajie",
+    "title": "Grand Canyon",
+    "titleZh": "张家界",
+    "file": "assets/zhangjiajie/library/zhangjiajie-1-3.png",
+    "tags": [
+      "张家界",
+      "zhangjiajie",
+      "grand-canyon",
+      "zhangjiajie-grand-canyon"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chengdu-1-1",
+    "destination": "chengdu",
+    "title": "Wuhou Shrine",
+    "titleZh": "成都",
+    "file": "assets/chengdu/library/chengdu-1-1.png",
+    "tags": [
+      "成都",
+      "chengdu",
+      "wuhou-shrine",
+      "jinli",
+      "panda-base"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chengdu-1-2",
+    "destination": "chengdu",
+    "title": "Kuanzhai Alley",
+    "titleZh": "成都",
+    "file": "assets/chengdu/library/chengdu-1-2.png",
+    "tags": [
+      "成都",
+      "chengdu",
+      "kuanzhai-alley",
+      "peoples-park",
+      "du-fu-thatched-cottage"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chengdu-1-3",
+    "destination": "chengdu",
+    "title": "Qingcheng Mountain",
+    "titleZh": "成都",
+    "file": "assets/chengdu/library/chengdu-1-3.png",
+    "tags": [
+      "成都",
+      "chengdu",
+      "qingcheng-mountain",
+      "dujiangyan"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chengdu-1-4",
+    "destination": "chengdu",
+    "title": "Sanxingdui",
+    "titleZh": "成都",
+    "file": "assets/chengdu/library/chengdu-1-4.png",
+    "tags": [
+      "成都",
+      "chengdu",
+      "sanxingdui",
+      "museum"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chengdu-2-1",
+    "destination": "chengdu",
+    "title": "Taikoo",
+    "titleZh": "成都",
+    "file": "assets/chengdu/library/chengdu-2-1.png",
+    "tags": [
+      "成都",
+      "chengdu",
+      "taikoo",
+      "chunxi",
+      "road",
+      "taikoo-li",
+      "chunxi-road"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chengdu-2-2",
+    "destination": "chengdu",
+    "title": "Jinli",
+    "titleZh": "成都",
+    "file": "assets/chengdu/library/chengdu-2-2.png",
+    "tags": [
+      "成都",
+      "chengdu",
+      "jinli",
+      "jinli-night-view"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "kunming-1-1",
+    "destination": "kunming",
+    "title": "Stone Forest",
+    "titleZh": "昆明",
+    "file": "assets/kunming/library/kunming-1-1.png",
+    "tags": [
+      "昆明",
+      "kunming",
+      "stone-forest",
+      "jiuxiang-caves"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "kunming-1-2",
+    "destination": "kunming",
+    "title": "Dianchi Lake",
+    "titleZh": "昆明",
+    "file": "assets/kunming/library/kunming-1-2.png",
+    "tags": [
+      "昆明",
+      "kunming",
+      "dianchi-lake",
+      "western-hills"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "kunming-1-3",
+    "destination": "kunming",
+    "title": "Green Lake Park",
+    "titleZh": "昆明",
+    "file": "assets/kunming/library/kunming-1-3.png",
+    "tags": [
+      "昆明",
+      "kunming",
+      "green-lake-park",
+      "cuihu-park",
+      "yuantong-temple",
+      "kunming-old-street",
+      "golden-horse-and-jade-rooster-archway"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "hangzhou-1-1",
+    "destination": "hangzhou",
+    "title": "Westlake",
+    "titleZh": "杭州",
+    "file": "assets/hangzhou/library/hangzhou-1-1.png",
+    "tags": [
+      "杭州",
+      "hangzhou",
+      "westlake",
+      "west-lake"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "hangzhou-1-2",
+    "destination": "hangzhou",
+    "title": "Lingyin Temple",
+    "titleZh": "杭州",
+    "file": "assets/hangzhou/library/hangzhou-1-2.png",
+    "tags": [
+      "杭州",
+      "hangzhou",
+      "lingyin-temple",
+      "feilai-peak"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "hangzhou-1-3",
+    "destination": "hangzhou",
+    "title": "Songcheng",
+    "titleZh": "杭州",
+    "file": "assets/hangzhou/library/hangzhou-1-3.png",
+    "tags": [
+      "杭州",
+      "hangzhou",
+      "songcheng",
+      "xixi-wetland"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "hangzhou-1-4",
+    "destination": "hangzhou",
+    "title": "Hefang Street",
+    "titleZh": "杭州",
+    "file": "assets/hangzhou/library/hangzhou-1-4.png",
+    "tags": [
+      "杭州",
+      "hangzhou",
+      "hefang-street",
+      "xiaohe-zhijie"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guilin-1-1",
+    "destination": "guilin",
+    "title": "Li River",
+    "titleZh": "桂林",
+    "file": "assets/guilin/library/guilin-1-1.png",
+    "tags": [
+      "桂林",
+      "guilin",
+      "li-river",
+      "yangshuo"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guilin-1-2",
+    "destination": "guilin",
+    "title": "Longji Rice Terraces",
+    "titleZh": "桂林",
+    "file": "assets/guilin/library/guilin-1-2.png",
+    "tags": [
+      "桂林",
+      "guilin",
+      "longji-rice-terraces",
+      "sun-and-moon",
+      "pagodas",
+      "elephant",
+      "elephant-trunk-hill"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "guilin-1-3",
+    "destination": "guilin",
+    "title": "Xingping Ancient Town",
+    "titleZh": "桂林",
+    "file": "assets/guilin/library/guilin-1-3.png",
+    "tags": [
+      "桂林",
+      "guilin",
+      "xingping-ancient-town",
+      "xiangong-hill",
+      "yulong-river",
+      "bamboo-rafting"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "furong-town-1786353762818",
+    "destination": "furong-town",
+    "title": "Furong Ancient Town",
+    "titleZh": "芙蓉镇",
+    "file": "assets/furong-town/library/furong-town-1786353762818.png",
+    "tags": [
+      "芙蓉镇",
+      "furong-town",
+      "furong-ancient-town"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "suzhou-1-1",
+    "destination": "suzhou",
+    "title": "Humble Administrators Garden",
+    "titleZh": "苏州",
+    "file": "assets/suzhou/library/suzhou-1-1.png",
+    "tags": [
+      "苏州",
+      "suzhou",
+      "humble-administrators-garden",
+      "museum",
+      "pingjiang",
+      "road",
+      "suzhou-museum",
+      "pingjiang-road"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "suzhou-1-2",
+    "destination": "suzhou",
+    "title": "Tiger Hill",
+    "titleZh": "苏州",
+    "file": "assets/suzhou/library/suzhou-1-2.png",
+    "tags": [
+      "苏州",
+      "suzhou",
+      "tiger-hill",
+      "hanshan-temple",
+      "shantang-street",
+      "lion-grove-garden"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "suzhou-1-3",
+    "destination": "suzhou",
+    "title": "Zhouzhuang",
+    "titleZh": "苏州",
+    "file": "assets/suzhou/library/suzhou-1-3.png",
+    "tags": [
+      "苏州",
+      "suzhou",
+      "zhouzhuang"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "xian-1-1",
+    "destination": "xian",
+    "title": "Terracotta Warriors",
+    "titleZh": "西安",
+    "file": "assets/xian/library/xian-1-1.png",
+    "tags": [
+      "西安",
+      "xian",
+      "terracotta-warriors",
+      "huaqing-palace"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "xian-1-2",
+    "destination": "xian",
+    "title": "City Wall",
+    "titleZh": "西安",
+    "file": "assets/xian/library/xian-1-2.png",
+    "tags": [
+      "西安",
+      "xian",
+      "city-wall",
+      "bell-and-drum-towers",
+      "muslim-quarter",
+      "big-wild-goose-pagoda"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "xian-1-3",
+    "destination": "xian",
+    "title": "Shaanxi History Museum",
+    "titleZh": "西安",
+    "file": "assets/xian/library/xian-1-3.png",
+    "tags": [
+      "西安",
+      "xian",
+      "shaanxi-history-museum",
+      "museum"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "xian-1-4",
+    "destination": "xian",
+    "title": "Tang Dynasty",
+    "titleZh": "西安",
+    "file": "assets/xian/library/xian-1-4.png",
+    "tags": [
+      "西安",
+      "xian",
+      "tang-dynasty",
+      "never-night-city",
+      "datang-everbright-city"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "xian-1-5",
+    "destination": "xian",
+    "title": "Xiaovan Tower",
+    "titleZh": "西安",
+    "file": "assets/xian/library/xian-1-5.png",
+    "tags": [
+      "西安",
+      "xian",
+      "xiaovan-tower",
+      "bell-tower",
+      "drum-tower"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chongqing-1-1",
+    "destination": "chongqing",
+    "title": "Jiefangbei",
+    "titleZh": "重庆",
+    "file": "assets/chongqing/library/chongqing-1-1.png",
+    "tags": [
+      "重庆",
+      "chongqing",
+      "jiefangbei",
+      "hongyadong"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chongqing-1-2",
+    "destination": "chongqing",
+    "title": "Shibati",
+    "titleZh": "重庆",
+    "file": "assets/chongqing/library/chongqing-1-2.png",
+    "tags": [
+      "重庆",
+      "chongqing",
+      "shibati",
+      "yangtze",
+      "yangtze-river-cableway",
+      "liziba"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chongqing-1-3",
+    "destination": "chongqing",
+    "title": "Ciqikou",
+    "titleZh": "重庆",
+    "file": "assets/chongqing/library/chongqing-1-3.png",
+    "tags": [
+      "重庆",
+      "chongqing",
+      "ciqikou",
+      "ancient-town",
+      "zhazidong-prison",
+      "prison",
+      "bai-mansion",
+      "gele-mountain"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "chongqing-1-4",
+    "destination": "chongqing",
+    "title": "Wulong",
+    "titleZh": "重庆",
+    "file": "assets/chongqing/library/chongqing-1-4.png",
+    "tags": [
+      "重庆",
+      "chongqing",
+      "wulong",
+      "natural-bridge",
+      "dazu",
+      "rock-carvings",
+      "raffles-city"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shangri_la-1-1",
+    "destination": "shangri_la",
+    "title": "Shangri La",
+    "titleZh": "香格里拉",
+    "file": "assets/shangri_la/library/shangri_la-1-1.png",
+    "tags": [
+      "香格里拉",
+      "shangri-la",
+      "pudacuo-national-park"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shangri_la-1-2",
+    "destination": "shangri_la",
+    "title": "Shangri La",
+    "titleZh": "香格里拉",
+    "file": "assets/shangri_la/library/shangri_la-1-2.png",
+    "tags": [
+      "香格里拉",
+      "shangri-la",
+      "balagezong"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  },
+  {
+    "id": "shangri_la-1-3",
+    "destination": "shangri_la",
+    "title": "Shangri La",
+    "titleZh": "香格里拉",
+    "file": "assets/shangri_la/library/shangri_la-1-3.png",
+    "tags": [
+      "香格里拉",
+      "shangri-la",
+      "napa-sea",
+      "songzanlin-monastery",
+      "monastery",
+      "duk ezong",
+      "ancient-town",
+      "duk-ezong-ancient-town"
+    ],
+    "languages": [
+      "en",
+      "id",
+      "es"
+    ],
+    "enabled": true,
+    "defaultSelected": true,
+    "isPlaceholder": false
+  }
+]

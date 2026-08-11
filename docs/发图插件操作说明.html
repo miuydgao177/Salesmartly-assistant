@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>发图插件操作说明</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.7; max-width: 920px; margin: 40px auto; padding: 0 20px; color: #1f2937; }
+    h1,h2,h3 { line-height: 1.25; }
+    img { max-width: 100%; border: 1px solid #e5e7eb; border-radius: 12px; margin: 12px 0 24px; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+    .meta { color: #6b7280; }
+  </style>
+</head>
+<body>
+  <h1>发图插件操作说明</h1>
+  <p class="meta">更新时间：2026-08-11</p>
+
+  <h2>1. 插件用途</h2>
+  <p>这个插件只做一件事：</p>
+  <ul>
+    <li>根据客户聊天内容识别目的地关键词</li>
+    <li>推荐对应目的地图片</li>
+    <li>由业务手动勾选图片</li>
+    <li>逐张复制到剪贴板</li>
+    <li>手动粘贴到 SaleSmartly 对话框</li>
+  </ul>
+
+  <p>当前版本不做：</p>
+  <ul>
+    <li>不自动发送</li>
+    <li>不区分 <code>family / senior / general</code></li>
+    <li>不区分语言标签</li>
+    <li>不自动把多图塞进待发送区</li>
+  </ul>
+
+  <h2>2. 安装方式</h2>
+  <ol>
+    <li>拿到压缩包 <code>发图插件.zip</code></li>
+    <li>解压到本地文件夹</li>
+    <li>打开 Chrome，进入 <code>chrome://extensions/</code></li>
+    <li>打开右上角“开发者模式”</li>
+    <li>点击“加载已解压的扩展程序”</li>
+    <li>选择解压后的插件文件夹</li>
+  </ol>
+
+  <h2>3. 初始界面</h2>
+  <p>插件默认停靠在页面右下角。</p>
+  <img src="./guide-images/panel-default.png" alt="插件默认状态" />
+
+  <h2>4. 正常使用流程</h2>
+  <h3>第一步：打开目标客户聊天</h3>
+  <p>进入 SaleSmartly 的目标客户会话页面，确认当前聊天窗口里有客户真实消息。</p>
+
+  <h3>第二步：点击“读取当前聊天”</h3>
+  <p>插件会根据当前聊天内容识别目的地，并显示推荐图片。</p>
+  <img src="./guide-images/action-buttons.png" alt="按钮区" />
+
+  <h3>第三步：查看识别结果和推荐图片</h3>
+  <p>识别成功后，面板会展开并显示目的地切换、推荐图片列表、图片勾选框和复制按钮。</p>
+  <img src="./guide-images/panel-expanded.png" alt="展开后的推荐区" />
+
+  <h3>第四步：勾选需要发送的图片</h3>
+  <p>业务只需要勾选本次要发给客户的图片即可。</p>
+
+  <h3>第五步：点击“复制所选内容”</h3>
+  <p>插件会先复制第一张已勾选图片到剪贴板。然后业务回到 SaleSmartly 输入区，Mac 用 <code>Cmd + V</code>，Windows 用 <code>Ctrl + V</code>。</p>
+
+  <h2>5. 目的地切换</h2>
+  <p>如果插件识别结果不准确，可以手动切换目的地下拉框。</p>
+
+  <h2>6. 面板拖动规则</h2>
+  <p>面板支持手动拖动，默认停靠在右下角，缩回后会尽量保持底部贴住原位置。</p>
+
+  <h2>7. 推荐操作习惯</h2>
+  <ol>
+    <li>打开客户聊天</li>
+    <li>点击 <code>读取当前聊天</code></li>
+    <li>核对目的地</li>
+    <li>勾选图片</li>
+    <li>点击 <code>复制所选内容</code></li>
+    <li>到输入框手动粘贴</li>
+    <li>如有多张，继续 <code>复制下一张已勾选图片</code></li>
+  </ol>
+
+  <h2>8. 常见问题</h2>
+  <ul>
+    <li>为什么没有自动发送？当前版本只负责“识别和发图辅助”。</li>
+    <li>为什么一次不能直接把多张图都贴进去？当前稳定方案仍然是逐张复制、逐张粘贴。</li>
+    <li>识别错了怎么办？直接手动切换目的地即可。</li>
+    <li>面板挡住了客户信息怎么办？直接拖动面板到不遮挡的位置。</li>
+  </ul>
+</body>
+</html>
