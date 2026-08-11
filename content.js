@@ -154,42 +154,19 @@
     }
   }
 
-  function deriveBotContentPackId(payload) {
-    if (!payload) {
-      return null;
-    }
-
-    if (payload.contentPackId) {
-      return payload.contentPackId;
-    }
-
-    const destination = payload.destinationOverride || payload.destination;
-    if (!destination) {
-      return null;
-    }
-
-    const pack = packApi.getPackBySignature(destination);
-    return pack ? pack.id : null;
-  }
-
-  function normalizeBotAnalysis(payload, fallbackMessages) {
+  function normalizeBotAnalysis(payload) {
     if (!payload || typeof payload !== 'object') {
       return null;
     }
 
     const destination = payload.destination || null;
     const destinationMeta = getDestinationMeta(destination);
-    const contentPackId = deriveBotContentPackId({
-      ...payload,
-      destination
-    });
     const matchedTerms = payload.matchedTerms && typeof payload.matchedTerms === 'object'
       ? payload.matchedTerms
       : {};
     return {
       destination,
       confidence: payload.confidence || 'medium',
-      contentPackId,
       matchedTerms: {
         source: ['mock_image_bot'],
         ...matchedTerms
@@ -216,9 +193,7 @@
               }
             ]
       : [],
-      source: 'image_bot',
-      rawBotPayload: payload,
-      fallbackMessages: fallbackMessages || []
+      source: 'image_bot'
     };
   }
 
@@ -306,11 +281,7 @@
     const images = resolvePackImages(pack);
     return {
       ...pack,
-      images,
-      imageSourceSummary:
-        images.length > 0 && images.every((image) => !image.isPlaceholder)
-          ? '已使用业务上传图片'
-          : '当前使用测试占位图'
+      images
     };
   }
 
@@ -416,7 +387,6 @@
     renderMockTestCaseResult({
       destination: null,
       confidence: null,
-      contentPackId: null,
       matchedTerms: {},
       blockedReason: null,
       source: null
@@ -713,7 +683,7 @@
       });
 
       if (resolved && resolved.payload) {
-        analysis = normalizeBotAnalysis(resolved.payload, messages);
+        analysis = normalizeBotAnalysis(resolved.payload);
       }
     }
 

@@ -40,18 +40,6 @@
       .trim();
   }
 
-  function collectMatches(text, keywordMap) {
-    return Object.entries(keywordMap).reduce((matches, [key, keywords]) => {
-      const foundTerms = keywords.filter((keyword) =>
-        text.includes(normalizeText(keyword))
-      );
-      if (foundTerms.length > 0) {
-        matches[key] = foundTerms;
-      }
-      return matches;
-    }, {});
-  }
-
   function findKeywordOccurrences(text, keyword) {
     const normalizedText = normalizeText(text);
     const normalizedKeyword = normalizeText(keyword);

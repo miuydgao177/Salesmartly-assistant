@@ -23,16 +23,14 @@
 
     return {
       destination: payload.destination || null,
-      language: payload.language || 'en',
-      intent: payload.intent || null,
       confidence: payload.confidence || 'medium',
       contentPackId: payload.contentPackId || null,
       matchedTerms: payload.matchedTerms || {},
       blockedReason: payload.blockedReason || null,
-      travellerCounts: payload.travellerCounts || null,
-      roomPlan: payload.roomPlan || null,
-      travellerFollowUp: payload.travellerFollowUp || null,
-      languagePendingConfirmation: Boolean(payload.languagePendingConfirmation)
+      hasAssets: typeof payload.hasAssets === 'boolean' ? payload.hasAssets : null,
+      destinationCandidates: Array.isArray(payload.destinationCandidates)
+        ? payload.destinationCandidates
+        : []
     };
   }
 

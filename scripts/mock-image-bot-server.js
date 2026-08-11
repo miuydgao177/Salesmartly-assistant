@@ -21,52 +21,6 @@ function sendJson(response, statusCode, payload) {
   response.end(JSON.stringify(payload, null, 2));
 }
 
-function detectLanguage(text) {
-  if (
-    text.includes('apakah') ||
-    text.includes('orang tua') ||
-    text.includes('keluarga')
-  ) {
-    return 'id';
-  }
-
-  if (
-    text.includes('¿') ||
-    text.includes('padres') ||
-    text.includes('familia') ||
-    text.includes('niños')
-  ) {
-    return 'es';
-  }
-
-  return 'en';
-}
-
-function detectIntent(text) {
-  if (
-    text.includes('parents') ||
-    text.includes('senior') ||
-    text.includes('elderly') ||
-    text.includes('older people') ||
-    text.includes('less walking') ||
-    text.includes('relaxed')
-  ) {
-    return 'senior';
-  }
-
-  if (
-    text.includes('family') ||
-    text.includes('children') ||
-    text.includes('kids') ||
-    text.includes('anak') ||
-    text.includes('niños')
-  ) {
-    return 'family';
-  }
-
-  return 'general';
-}
-
 function detectDestination(text) {
   if (
     text.includes('zhangjiajie') ||
@@ -87,8 +41,6 @@ function buildResponse(messages) {
   if (!destination) {
     return {
       destination: null,
-      language: 'en',
-      intent: null,
       confidence: 'low',
       contentPackId: null,
       matchedTerms: {},
@@ -96,24 +48,13 @@ function buildResponse(messages) {
     };
   }
 
-  const language = detectLanguage(mergedText);
-  const intent = detectIntent(mergedText);
-
   return {
     destination,
-    language,
-    intent,
-    confidence: intent === 'general' ? 'medium' : 'high',
-    contentPackId: `${destination}-${intent}-${language}`,
+    confidence: 'high',
+    contentPackId: `${destination}-destination`,
     matchedTerms: {
       destination: {
         [destination]: [destination]
-      },
-      intent: {
-        [intent]: [intent]
-      },
-      language: {
-        [language]: [language]
       }
     },
     blockedReason: null
