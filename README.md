@@ -1,92 +1,67 @@
 # SaleSmartly 发图助手
 
-这是一个 Chrome Manifest V3 扩展，用来在 SaleSmartly 或本地 mock 页面里做“识别目的地 -> 推荐图片 -> 手动勾选 -> 逐张复制 -> 手动粘贴”的半自动发图流程验证。
+`SaleSmartly 发图助手` 是一个 Chrome 扩展，用来在 SaleSmartly 聊天页面中做最小可用的发图辅助：
 
-当前版本的原则很明确：
+- 识别聊天中的目的地关键词
+- 推荐对应目的地图片
+- 业务手动勾选图片
+- 逐张复制图片到剪贴板
+- 手动粘贴到聊天输入框
 
-- 不自动发送消息
-- 不依赖 SaleSmartly 私有接口
-- 真实页面只走“复制图片到剪贴板 + 人工粘贴”
-- mock 页面保留待发送区，仅用于本地联调
+当前版本已经刻意收敛，不再保留多余分支逻辑。
 
-## 当前能力
+## 当前产品边界
 
-- 识别 19 个目的地
-- 只根据关键词目的地识别并推荐图片
-- 支持插件内置图片库
-- 支持本地 OCR 清洗结果导入图片元数据
-- 支持 mock 页面测试用例和图片 Bot 模拟结果
-- 支持真实页面逐张复制已勾选图片
+当前只做：
 
-## 当前真实业务流程
+- 按目的地识别图片需求
+- 展示推荐图片
+- 支持手动切换目的地
+- 支持逐张复制已勾选图片
 
-在真实 SaleSmartly 页面里，稳定可用的流程是：
+当前不做：
 
-1. 点击 `读取当前聊天`
-2. 面板识别目的地并展示推荐图片
-3. 手动勾选需要发送的图片
-4. 点击 `复制所选内容`
-5. 扩展先复制第 1 张图片
-6. 在 SaleSmartly 输入区手动 `Cmd+V` 或 `Ctrl+V`
-7. 如还有下一张，点击 `复制下一张已勾选图片`
-8. 重复粘贴，直到完成
+- 不自动发送
+- 不区分 `family / senior / general`
+- 不区分语言分类
+- 不依赖 SaleSmartly 私有上传接口
+- 不自动把多图塞进待发送区
 
-这套流程是当前真正对业务负责、也最稳定的交付范围。
+## 真实使用流程
 
-## 项目结构
+在真实 SaleSmartly 页面里，推荐业务按下面顺序操作：
 
-```text
-├── manifest.json
-├── content.js
-├── styles.css
-├── selectors.js
-├── destinations.js
-├── intent-rules.js
-├── image-selection-rules.js
-├── image-library.js
-├── image-bot-client.js
-├── content-packs.js
-├── dev/
-│   ├── mock-chat.html
-│   ├── test-cases.js
-│   └── playwright-smoke.mjs
-├── docs/
-│   ├── image-bot-mvp.md
-│   └── image-bot-integration.md
-├── generated/
-│   ├── image-library.generated.js
-│   └── image-library.import.json
-├── data/
-│   └── ocr/
-│       ├── ocr-image-tags-results.json
-│       └── ocr-image-tags-cleaned.json
-├── scripts/
-└── assets/
-```
+1. 打开客户聊天
+2. 点击 `读取当前聊天`
+3. 核对识别出的目的地
+4. 勾选需要发送的图片
+5. 点击 `复制所选内容`
+6. 回到输入框手动粘贴
+7. 如果勾选了多张图，继续点击 `复制下一张已勾选图片`
 
-各目录职责：
+这是当前最稳定、也最适合业务落地的使用方式。
 
-- `content.js`：主运行时，负责识别、面板渲染、图片勾选、复制流程
-- `selectors.js`：页面选择器集中定义
-- `destinations.js`：目的地和别名词库
-- `intent-rules.js`：目的地和否定判断规则
-- `image-library.js`：正式图片库索引
-- `image-selection-rules.js`：按关键词选图
-- `dev/`：本地联调用页面、测试用例、冒烟脚本
-- `generated/`：脚本生成物，不手改
-- `data/ocr/`：OCR 原始结果和清洗结果
-- `docs/`：产品边界和对接说明
+## 安装方式
+
+1. 打开 Chrome，进入 `chrome://extensions/`
+2. 打开右上角“开发者模式”
+3. 点击“加载已解压的扩展程序”
+4. 选择项目目录
+
+如果使用打包版本：
+
+1. 先解压 `发图插件.zip`
+2. 再按上面的步骤加载解压后的文件夹
 
 ## 本地开发
 
-加载扩展：
+项目根目录：
 
-1. 打开 `chrome://extensions/`
-2. 开启“开发者模式”
-3. 选择“加载已解压的扩展程序”
-4. 选择项目根目录 `/Users/apple/Desktop/salesmartly-assistant`
+```bash
+/Users/apple/Desktop/salesmartly-assistant
+```
 
-打开 mock 页面：
+如果要联调 mock 页面：
 
 ```bash
 python3 -m http.server 3002
@@ -96,55 +71,74 @@ python3 -m http.server 3002
 
 - [http://127.0.0.1:3002/dev/mock-chat.html](http://127.0.0.1:3002/dev/mock-chat.html)
 
-## mock 页面用途
+## 目录结构
 
-`dev/mock-chat.html` 只服务于本地联调，不代表真实业务页面。
+```text
+├── manifest.json
+├── content.js
+├── message-reader.js
+├── clipboard-flow.js
+├── panel-layout.js
+├── styles.css
+├── selectors.js
+├── destinations.js
+├── destination-rules.js
+├── image-selection-rules.js
+├── image-library.js
+├── image-bot-client.js
+├── content-packs.js
+├── assets/
+├── dev/
+├── docs/
+├── generated/
+├── data/
+└── scripts/
+```
 
-它保留这些能力：
+主要文件说明：
 
-- 切换测试消息
-- 查看规则识别结果
-- 模拟图片 Bot 返回结果
-- 用待发送区验证“推荐图片写入 mock 页”的行为
-
-mock 页面里的 `加入发送区` 只是测试动作，不会真的发送。
+- `content.js`：插件总控层，负责串联“读取聊天 -> 识别目的地 -> 选择图片 -> 复制流程 -> 渲染面板”
+- `message-reader.js`：聊天消息提取模块，负责从真实页面或 mock 页面读取客户消息
+- `clipboard-flow.js`：剪贴板流程模块，负责已勾选图片的逐张复制逻辑
+- `panel-layout.js`：面板布局模块，负责拖拽、底部停靠和缩放后的定位稳定
+- `destination-rules.js`：目的地关键词识别和否定规则
+- `destinations.js`：目的地词库
+- `image-library.js`：正式图片索引
+- `image-selection-rules.js`：按目的地和消息关键词选图
+- `content-packs.js`：目的地图片包定义
+- `styles.css`：面板样式
+- `dev/mock-chat.html`：本地联调用页面
 
 ## 图片库维护
 
 正式图片放在：
 
-- `assets/<destination>/library/`
-
-示例：
-
 ```text
-assets/
-  beijing/
-    library/
-  chengdu/
-    library/
-  zhangjiajie/
-    library/
+assets/<destination>/library/
 ```
 
-图片索引主要看这两个文件：
+例如：
+
+```text
+assets/beijing/library/
+assets/chengdu/library/
+assets/zhangjiajie/library/
+```
+
+相关文件：
 
 - [image-library.js](/Users/apple/Desktop/salesmartly-assistant/image-library.js)
 - [image-selection-rules.js](/Users/apple/Desktop/salesmartly-assistant/image-selection-rules.js)
 
-## 批量建库脚本
+## 常用脚本
 
-扫描图片目录并生成索引草稿：
+生成图片库索引草稿：
 
 ```bash
 node scripts/generate-image-library-snippet.js
 ```
 
-输出位置：
-
-- `generated/image-library.generated.js`
-
-只打印不落盘：
+只输出到终端：
 
 ```bash
 node scripts/generate-image-library-snippet.js --stdout
@@ -157,55 +151,73 @@ node scripts/normalize-ocr-tags.js
 node scripts/import-ocr-library.js
 ```
 
-相关文件：
-
-- `data/ocr/ocr-image-tags-results.json`
-- `data/ocr/ocr-image-tags-cleaned.json`
-- `generated/image-library.import.json`
-
 图片库自检：
 
 ```bash
 node scripts/audit-image-library.js
 ```
 
-这个脚本会检查三类问题：
+## mock 页面说明
 
-- `image-library.js` 里的 `destination` 和素材目录是否一致
-- `assets/*/library/` 里是否存在完全没有被任何索引引用的旧文件
-- 哪些图片目前只在 `generated/image-library.import.json` 里，还没有进入主索引
+`dev/mock-chat.html` 只用于本地联调，不代表真实 SaleSmartly 页面能力。
 
-2026-08-10 这轮整理里，已归档的无引用旧文件放在：
+它主要用来：
 
-- `/Users/apple/Desktop/salesmartly-assistant/.backups/2026-08-10-unused-library-assets/`
-- `/Users/apple/Desktop/salesmartly-assistant/.backups/2026-08-10-unused-library-assets-manifest.json`
+- 切换测试消息
+- 查看识别结果
+- 模拟图片 Bot 返回
+- 验证推荐图片在 mock 待发送区里的表现
 
-## 冒烟测试
+mock 页里的“加入发送区”只是测试动作，不会真实发送。
+
+## 当前代码思路
+
+现在这版代码遵循的是“适度拆分，主流程集中”的思路：
+
+- 把不稳定、容易变复杂的能力单独拆出去
+- 把真正的业务主线保留在 `content.js`
+- 避免为了形式上的模块化而过度细分文件
+
+当前主流程可以概括为：
+
+1. `message-reader.js` 读取当前聊天里的客户消息
+2. `destination-rules.js` 或图片 Bot 识别目的地
+3. `content.js` 根据识别结果选中对应内容包与图片
+4. `clipboard-flow.js` 处理“复制所选内容 / 复制下一张”
+5. `panel-layout.js` 保证面板拖拽和定位表现稳定
+
+这样做的目标不是把文件拆得越多越好，而是让每个文件只负责一种稳定职责，同时让主流程还能一眼看懂。
+
+## 测试
 
 本地冒烟脚本：
 
 - [dev/playwright-smoke.mjs](/Users/apple/Desktop/salesmartly-assistant/dev/playwright-smoke.mjs)
 
-它现在只校验当前仍在维护的能力：
+当前主要覆盖：
 
-- 读取聊天后能展示推荐图片
-- 可手动切换目的地
-- mock 页面可把选中图片加入待发送区
-- 清空按钮可清掉输入框和待发送区
-- 否定用例会阻断推荐
-- 图片 Bot 结果能覆盖本地规则
+- 读取聊天后展示推荐图片
+- 手动切换目的地
+- mock 页面加入待发送区
+- 清空内容
+- 否定用例阻断推荐
+- 图片 Bot 结果覆盖本地规则
 
-## 当前边界
+## 文档
 
-- 真实 SaleSmartly 页面不支持自动把多图塞进待发送区
-- 当前稳定方案仍然是勾选后逐张复制、逐张粘贴
-- mock 页的待发送区能力不能等同于真实页面能力
-- 没有自动点击发送
-- 没有后端数据库依赖
-- 没有用户反馈闭环
+交付文档：
 
-## 备份基线
+- [发图插件操作说明.html](/Users/apple/Desktop/salesmartly-assistant/docs/发图插件操作说明.html)
+- [发图插件操作说明.md](/Users/apple/Desktop/salesmartly-assistant/docs/发图插件操作说明.md)
 
-当前整理前的可回退基线在：
+产品和对接说明：
 
-- `/Users/apple/Desktop/salesmartly-assistant/.backups/2026-08-10-baseline/`
+- [docs/image-bot-mvp.md](/Users/apple/Desktop/salesmartly-assistant/docs/image-bot-mvp.md)
+- [docs/image-bot-integration.md](/Users/apple/Desktop/salesmartly-assistant/docs/image-bot-integration.md)
+
+## 当前限制
+
+- 真实页面仍然是逐张复制、逐张粘贴
+- 多图不能稳定自动进入待发送区
+- 面板是辅助工具，不替代业务最终确认
+- 当前没有自动发送闭环

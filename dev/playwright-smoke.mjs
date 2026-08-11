@@ -36,7 +36,8 @@ export async function runPlaywrightTests({ chromium, outputDir, pageUrl }) {
     await page.goto(targetUrl, { waitUntil: 'load' });
 
     await injectScript(page, 'selectors.js');
-    await injectScript(page, 'intent-rules.js');
+    await injectScript(page, 'destination-rules.js');
+    await injectScript(page, 'panel-layout.js');
     await injectScript(page, 'content-packs.js');
     await injectScript(page, 'content.js');
 
@@ -116,8 +117,7 @@ export async function runPlaywrightTests({ chromium, outputDir, pageUrl }) {
       passed: negativeResult.includes('"blockedReason": "negative_signal"')
     });
 
-    await page.locator('[data-testid="bot-language"]').selectOption('es');
-    await page.locator('[data-testid="bot-intent"]').selectOption('family');
+    await page.locator('[data-testid="bot-destination"]').selectOption('guilin');
     await page.locator('[data-testid="bot-apply"]').click();
     await readButton.click();
     await page.waitForTimeout(700);
@@ -125,8 +125,7 @@ export async function runPlaywrightTests({ chromium, outputDir, pageUrl }) {
     result.checks.push({
       name: '图片 Bot 结果可覆盖本地规则',
       passed:
-        botResult.includes('"destination": "zhangjiajie"') &&
-        botResult.includes('"intent": "family"') &&
+        botResult.includes('"destination": "guilin"') &&
         botResult.includes('"source": "image_bot"')
     });
 

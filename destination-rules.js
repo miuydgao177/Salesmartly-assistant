@@ -219,7 +219,7 @@
     };
   }
 
-  globalThis.INTENT_RULES = {
+  const api = {
     normalizeText,
     detectDestination,
     detectNegative,
@@ -227,4 +227,7 @@
     DESTINATION_RULES,
     NEGATIVE_RULES
   };
+
+  globalThis.DESTINATION_RULES_API = api;
+  globalThis.INTENT_RULES = api;
 })();

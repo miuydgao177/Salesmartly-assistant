@@ -17,7 +17,8 @@
       "js": [
         "selectors.js",
         "destinations.js",
-        "intent-rules.js",
+        "destination-rules.js",
+        "panel-layout.js",
         "image-library.js",
         "image-selection-rules.js",
         "content-packs.js",
